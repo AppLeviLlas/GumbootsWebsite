@@ -136,13 +136,14 @@
 }
 </script>
     <link href="css/site-fixes.css" rel="stylesheet" />
+    <script src="js/site-fixes.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <nav id="mainNav">
         <div class="container-main">
             <a href="/" class="nav-brand">Gumboots <span>Consulting Engineers</span></a>
-            <button class="nav-toggler" id="navToggler" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <button class="nav-toggler" id="navToggler" aria-label="Menu" aria-controls="navLinks" aria-expanded="false"><i class="fas fa-bars"></i></button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#services">Services</a></li>
@@ -304,7 +305,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-map-marked-alt"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Volcanic Terrain &amp; Mine Workings Knowledge</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Volcanic Terrain &amp; Mine Workings Knowledge</h3>
                             <p class="mb-0">We understand the deep volcanic soils of the Coromandel Ranges and the historic goldfields mine workings that are a feature of the Coromandel Town area. Our stormwater assessments consider mine workings proximity when evaluating soakpit feasibility &#8212; something that engineers without local knowledge may overlook.</p>
                         </div>
                     </div>
@@ -313,7 +314,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-file-contract"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">TCDC Consent Knowledge</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">TCDC Consent Knowledge</h3>
                             <p class="mb-0">We prepare stormwater management plans to TCDC's exact requirements for Coromandel Town properties, reducing consent queries and keeping your building consent on track. We also understand WRC's rules for the Coromandel Harbour catchment where these apply to larger or commercial developments.</p>
                         </div>
                     </div>
@@ -322,7 +323,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-ruler-combined"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Integrated Civil &amp; Stormwater</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Integrated Civil &amp; Stormwater</h3>
                             <p class="mb-0">We integrate stormwater design with civil site plans and earthworks design for Coromandel Town development projects &#8212; ensuring that site grading, cut drains, and stormwater disposal all work together on steep hillside sites and remote rural sections where the terrain makes integrated design essential.</p>
                         </div>
                     </div>
@@ -331,7 +332,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-tools"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Remote Site &amp; Rural Block Expertise</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Remote Site &amp; Rural Block Expertise</h3>
                             <p class="mb-0">Rural lifestyle blocks beyond Coromandel Town require standalone stormwater systems with no connection to reticulated infrastructure. We design robust, low-maintenance systems for remote sites in the Coromandel Ranges, sized to handle the high annual rainfall and suited to the practical constraints of remote rural properties.</p>
                         </div>
                     </div>
@@ -348,10 +349,10 @@
                 </div>
             </div>
             <div class="row gx-5 row-cols-1 row-cols-md-2 row-cols-lg-4">
-                <div class="col mb-4"><a href="geotechnical-engineering-coromandel-town.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-mountain"></i></div><h4 class="h6 fw-bolder text-gumboots-light mb-2">Geotechnical Engineering Coromandel Town</h4></div></div></a></div>
-                <div class="col mb-4"><a href="civil-engineering-coromandel-town.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-hard-hat"></i></div><h4 class="h6 fw-bolder text-gumboots-light mb-2">Civil Engineering Coromandel Town</h4></div></div></a></div>
-                <div class="col mb-4"><a href="tp58-wastewater-coromandel-town.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-tint"></i></div><h4 class="h6 fw-bolder text-gumboots-light mb-2">TP58 Wastewater Coromandel Town</h4></div></div></a></div>
-                <div class="col mb-4"><a href="coromandel-town.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-map-marker-alt"></i></div><h4 class="h6 fw-bolder text-gumboots-light mb-2">All Coromandel Town Services</h4></div></div></a></div>
+                <div class="col mb-4"><a href="geotechnical-engineering-coromandel-town.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-mountain"></i></div><h3 class="h6 fw-bolder text-gumboots-light mb-2">Geotechnical Engineering Coromandel Town</h3></div></div></a></div>
+                <div class="col mb-4"><a href="civil-engineering-coromandel-town.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-hard-hat"></i></div><h3 class="h6 fw-bolder text-gumboots-light mb-2">Civil Engineering Coromandel Town</h3></div></div></a></div>
+                <div class="col mb-4"><a href="tp58-wastewater-coromandel-town.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-tint"></i></div><h3 class="h6 fw-bolder text-gumboots-light mb-2">TP58 Wastewater Coromandel Town</h3></div></div></a></div>
+                <div class="col mb-4"><a href="coromandel-town.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-map-marker-alt"></i></div><h3 class="h6 fw-bolder text-gumboots-light mb-2">All Coromandel Town Services</h3></div></div></a></div>
             </div>
             <div class="text-center mt-4">
                 <a href="coromandel-town.html" class="btn btn-gumboots-light btn-lg me-2"><i class="fas fa-map-marker-alt me-2"></i> All Coromandel Town Services</a>
@@ -415,7 +416,7 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>Services</h4>
+                    <h2>Services</h2>
                     <ul>
                         <li><a href="civil-engineering.html">Civil Engineering</a></li>
                         <li><a href="geotechnical-engineering.html">Geotechnical Engineering</a></li>
@@ -426,7 +427,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Coromandel</h4>
+                    <h2>Coromandel</h2>
                     <ul>
                         <li><a href="coromandel-peninsula.html">Coromandel Peninsula</a></li>
                         <li><a href="whangamata.html">Whangamata</a></li>

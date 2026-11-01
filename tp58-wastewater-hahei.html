@@ -136,13 +136,14 @@
 }
 </script>
     <link href="css/site-fixes.css" rel="stylesheet" />
+    <script src="js/site-fixes.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <nav id="mainNav">
         <div class="container-main">
             <a href="/" class="nav-brand">Gumboots <span>Consulting Engineers</span></a>
-            <button class="nav-toggler" id="navToggler" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <button class="nav-toggler" id="navToggler" aria-label="Menu" aria-controls="navLinks" aria-expanded="false"><i class="fas fa-bars"></i></button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#services">Services</a></li>
@@ -304,7 +305,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-map-marked-alt"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Limestone Geology Knowledge</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Limestone Geology Knowledge</h3>
                             <p class="mb-0">We understand the variable rock depth and drainage characteristics of Hahei's Miocene limestone terrain. Our site investigations address the specific risks associated with limestone &#8212; shallow rock, fissure drainage &#8212; and design disposal systems that account for these conditions rather than ignoring them.</p>
                         </div>
                     </div>
@@ -313,7 +314,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-file-contract"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">TCDC Consent Knowledge</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">TCDC Consent Knowledge</h3>
                             <p class="mb-0">We prepare TP58 reports to TCDC's exact requirements and understand what their processing officers need to see for Hahei's complex site conditions. We minimise consent queries and keep your building consent moving efficiently.</p>
                         </div>
                     </div>
@@ -322,7 +323,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-ruler-combined"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Combined Geotech &amp; TP58</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Combined Geotech &amp; TP58</h3>
                             <p class="mb-0">We offer geotechnical assessment and TP58 wastewater design together in a single site visit for most Hahei properties. Rock depth assessment and soil classification data from the geotechnical investigation directly inform the wastewater design &#8212; no duplication of fieldwork.</p>
                         </div>
                     </div>
@@ -331,7 +332,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-shield-alt"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Coastal Environment Expertise</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Coastal Environment Expertise</h3>
                             <p class="mb-0">For Hahei beachfront and near-coastal properties, we navigate WRC's coastal marine area setback requirements alongside TCDC's building consent rules &#8212; identifying the available disposal area within both sets of constraints before designing the system.</p>
                         </div>
                     </div>
@@ -348,10 +349,10 @@
                 </div>
             </div>
             <div class="row gx-5 row-cols-1 row-cols-md-2 row-cols-lg-4">
-                <div class="col mb-4"><a href="geotechnical-engineering-hahei.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-mountain"></i></div><h4 class="h6 fw-bolder text-gumboots-light mb-2">Geotechnical Engineering Hahei</h4></div></div></a></div>
-                <div class="col mb-4"><a href="civil-engineering-hahei.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-hard-hat"></i></div><h4 class="h6 fw-bolder text-gumboots-light mb-2">Civil Engineering Hahei</h4></div></div></a></div>
-                <div class="col mb-4"><a href="stormwater-design-hahei.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-cloud-rain"></i></div><h4 class="h6 fw-bolder text-gumboots-light mb-2">Stormwater Design Hahei</h4></div></div></a></div>
-                <div class="col mb-4"><a href="hahei.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-map-marker-alt"></i></div><h4 class="h6 fw-bolder text-gumboots-light mb-2">All Hahei Services</h4></div></div></a></div>
+                <div class="col mb-4"><a href="geotechnical-engineering-hahei.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-mountain"></i></div><h3 class="h6 fw-bolder text-gumboots-light mb-2">Geotechnical Engineering Hahei</h3></div></div></a></div>
+                <div class="col mb-4"><a href="civil-engineering-hahei.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-hard-hat"></i></div><h3 class="h6 fw-bolder text-gumboots-light mb-2">Civil Engineering Hahei</h3></div></div></a></div>
+                <div class="col mb-4"><a href="stormwater-design-hahei.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-cloud-rain"></i></div><h3 class="h6 fw-bolder text-gumboots-light mb-2">Stormwater Design Hahei</h3></div></div></a></div>
+                <div class="col mb-4"><a href="hahei.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-map-marker-alt"></i></div><h3 class="h6 fw-bolder text-gumboots-light mb-2">All Hahei Services</h3></div></div></a></div>
             </div>
             <div class="text-center mt-4">
                 <a href="hahei.html" class="btn btn-gumboots-light btn-lg me-2"><i class="fas fa-map-marker-alt me-2"></i> All Hahei Services</a>
@@ -415,7 +416,7 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>Services</h4>
+                    <h2>Services</h2>
                     <ul>
                         <li><a href="civil-engineering.html">Civil Engineering</a></li>
                         <li><a href="geotechnical-engineering.html">Geotechnical Engineering</a></li>
@@ -426,7 +427,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Coromandel</h4>
+                    <h2>Coromandel</h2>
                     <ul>
                         <li><a href="coromandel-peninsula.html">Coromandel Peninsula</a></li>
                         <li><a href="whangamata.html">Whangamata</a></li>

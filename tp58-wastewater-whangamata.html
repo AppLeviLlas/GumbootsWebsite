@@ -136,13 +136,14 @@
 }
 </script>
     <link href="css/site-fixes.css" rel="stylesheet" />
+    <script src="js/site-fixes.js" defer></script>
 </head>
 <body>
     <a class="skip-link" href="#main">Skip to content</a>
     <nav id="mainNav">
         <div class="container-main">
             <a href="/" class="nav-brand">Gumboots <span>Consulting Engineers</span></a>
-            <button class="nav-toggler" id="navToggler" aria-label="Toggle navigation"><i class="fas fa-bars"></i></button>
+            <button class="nav-toggler" id="navToggler" aria-label="Menu" aria-controls="navLinks" aria-expanded="false"><i class="fas fa-bars"></i></button>
             <ul class="nav-links" id="navLinks">
                 <li><a href="/#about">About</a></li>
                 <li><a href="/#services">Services</a></li>
@@ -304,7 +305,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-map-marked-alt"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Coastal Soil Knowledge</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Coastal Soil Knowledge</h3>
                             <p class="mb-0">We work regularly on coastal dune sand sites across the Coromandel and understand the groundwater and percolation characteristics that govern TP58 design in Whangamata. Our assessments are based on measured data, not assumptions.</p>
                         </div>
                     </div>
@@ -313,7 +314,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-file-contract"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">TCDC Consent Knowledge</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">TCDC Consent Knowledge</h3>
                             <p class="mb-0">We prepare TP58 reports to TCDC's exact requirements, reducing the chances of consent queries and keeping your building consent on track. We understand what TCDC's processing officers need to see.</p>
                         </div>
                     </div>
@@ -322,7 +323,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-ruler-combined"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Combined Geotech &amp; TP58</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Combined Geotech &amp; TP58</h3>
                             <p class="mb-0">We offer geotechnical assessment and TP58 wastewater design together in a single site visit for most Whangamata properties &#8212; saving you time and cost compared to using separate consultants for each discipline.</p>
                         </div>
                     </div>
@@ -331,7 +332,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-dollar-sign"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Practical, Cost-Effective Designs</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Practical, Cost-Effective Designs</h3>
                             <p class="mb-0">We design systems that meet TCDC requirements without over-engineering. On sandy Whangamata sites, there is often a straightforward solution &#8212; we identify it and design it efficiently without unnecessary complexity.</p>
                         </div>
                     </div>
@@ -348,10 +349,10 @@
                 </div>
             </div>
             <div class="row gx-5 row-cols-1 row-cols-md-2 row-cols-lg-4">
-                <div class="col mb-4"><a href="geotechnical-engineering-whangamata.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-mountain"></i></div><h4 class="h6 fw-bolder text-gumboots-light mb-2">Geotechnical Engineering Whangamata</h4></div></div></a></div>
-                <div class="col mb-4"><a href="civil-engineering-whangamata.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-hard-hat"></i></div><h4 class="h6 fw-bolder text-gumboots-light mb-2">Civil Engineering Whangamata</h4></div></div></a></div>
-                <div class="col mb-4"><a href="stormwater-design-whangamata.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-cloud-rain"></i></div><h4 class="h6 fw-bolder text-gumboots-light mb-2">Stormwater Design Whangamata</h4></div></div></a></div>
-                <div class="col mb-4"><a href="whangamata.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-map-marker-alt"></i></div><h4 class="h6 fw-bolder text-gumboots-light mb-2">All Whangamata Services</h4></div></div></a></div>
+                <div class="col mb-4"><a href="geotechnical-engineering-whangamata.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-mountain"></i></div><h3 class="h6 fw-bolder text-gumboots-light mb-2">Geotechnical Engineering Whangamata</h3></div></div></a></div>
+                <div class="col mb-4"><a href="civil-engineering-whangamata.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-hard-hat"></i></div><h3 class="h6 fw-bolder text-gumboots-light mb-2">Civil Engineering Whangamata</h3></div></div></a></div>
+                <div class="col mb-4"><a href="stormwater-design-whangamata.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-cloud-rain"></i></div><h3 class="h6 fw-bolder text-gumboots-light mb-2">Stormwater Design Whangamata</h3></div></div></a></div>
+                <div class="col mb-4"><a href="whangamata.html" class="text-decoration-none"><div class="card h-100 service-item border-0 shadow-sm"><div class="card-body p-3 text-center"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-map-marker-alt"></i></div><h3 class="h6 fw-bolder text-gumboots-light mb-2">All Whangamata Services</h3></div></div></a></div>
             </div>
             <div class="text-center mt-4">
                 <a href="whangamata.html" class="btn btn-gumboots-light btn-lg me-2"><i class="fas fa-map-marker-alt me-2"></i> All Whangamata Services</a>
@@ -415,7 +416,7 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>Services</h4>
+                    <h2>Services</h2>
                     <ul>
                         <li><a href="civil-engineering.html">Civil Engineering</a></li>
                         <li><a href="geotechnical-engineering.html">Geotechnical Engineering</a></li>
@@ -426,7 +427,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Coromandel</h4>
+                    <h2>Coromandel</h2>
                     <ul>
                         <li><a href="coromandel-peninsula.html">Coromandel Peninsula</a></li>
                         <li><a href="whangamata.html">Whangamata</a></li>

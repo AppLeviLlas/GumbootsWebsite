@@ -118,8 +118,22 @@ a:hover { color: var(--fix-green-dark); }
 .site-footer .footer-bottom p,
 .site-footer .footer-bottom a,
 .site-footer .footer-bottom span,
+.site-footer .footer-col h2,
+.site-footer .footer-col h3,
 .site-footer .footer-col h4 {
     color: rgba(255, 255, 255, 0.72) !important;
+}
+
+/* Footer column titles are h2 (h3 for a second title in a column), styled as the old h4 */
+.site-footer .footer-col h2,
+.site-footer .footer-col h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 0.68rem;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
 .site-footer .footer-col ul a,
@@ -146,6 +160,36 @@ a:hover { color: var(--fix-green-dark); }
 }
 
 .site-footer .footer-social a:hover { background: rgba(255, 255, 255, 0.08); }
+
+
+/* ── Narrow screens ── */
+
+/* Wide tables scroll inside their own box instead of widening the page */
+.table-scroll {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* 404 "Popular Services" heading is now h2, styled as the old h3 */
+.popular-links h2 {
+    font-size: 1.25rem;
+    color: #2a3517;
+    margin-bottom: 1.5rem;
+}
+
+/* 404 card shrinks to fit; its logo scales down instead of pushing it wider */
+.error-content {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    overflow-wrap: anywhere;
+}
+
+.error-content .logo-container img {
+    max-width: 100%;
+    height: auto;
+    max-height: 60px;
+}
 
 
 /* ── Motion ── */

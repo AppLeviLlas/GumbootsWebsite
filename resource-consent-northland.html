@@ -171,6 +171,7 @@
 }
 </script>
     <link href="css/site-fixes.css" rel="stylesheet" />
+    <script src="js/site-fixes.js" defer></script>
 </head>
 
 <body>
@@ -179,7 +180,7 @@
     <nav id="mainNav">
         <div class="container-main">
             <a href="/" class="nav-brand">Gumboots <span>Consulting Engineers</span></a>
-            <button class="nav-toggler" id="navToggler" aria-label="Toggle navigation">
+            <button class="nav-toggler" id="navToggler" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links" id="navLinks">
@@ -330,52 +331,54 @@
             </div>
             <div class="row gx-5 justify-content-center">
                 <div class="col-lg-10">
-                    <table class="consent-table">
-                        <thead>
-                            <tr>
-                                <th>Activity</th>
-                                <th>FNDC (or WDC / KDC)</th>
-                                <th>Northland Regional Council</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Subdivision (new titles)</td>
-                                <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Resource consent</td>
-                                <td>Sometimes — if earthworks or discharge involved</td>
-                            </tr>
-                            <tr>
-                                <td>New dwelling — residential zone</td>
-                                <td>Building consent (usually permitted activity)</td>
-                                <td>Sometimes — if near waterway or coastal</td>
-                            </tr>
-                            <tr>
-                                <td>Earthworks over threshold</td>
-                                <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Resource consent</td>
-                                <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> If near waterway</td>
-                            </tr>
-                            <tr>
-                                <td>Coastal development</td>
-                                <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Resource consent</td>
-                                <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Coastal permit</td>
-                            </tr>
-                            <tr>
-                                <td>Water take (bore, stream)</td>
-                                <td>Not applicable</td>
-                                <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Water permit</td>
-                            </tr>
-                            <tr>
-                                <td>Discharge to water or land</td>
-                                <td>Not applicable</td>
-                                <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Discharge permit</td>
-                            </tr>
-                            <tr>
-                                <td>Retaining wall &gt;1.5m</td>
-                                <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Building consent</td>
-                                <td>Sometimes — if near waterway</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table-scroll">
+                        <table class="consent-table">
+                            <thead>
+                                <tr>
+                                    <th>Activity</th>
+                                    <th>FNDC (or WDC / KDC)</th>
+                                    <th>Northland Regional Council</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Subdivision (new titles)</td>
+                                    <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Resource consent</td>
+                                    <td>Sometimes — if earthworks or discharge involved</td>
+                                </tr>
+                                <tr>
+                                    <td>New dwelling — residential zone</td>
+                                    <td>Building consent (usually permitted activity)</td>
+                                    <td>Sometimes — if near waterway or coastal</td>
+                                </tr>
+                                <tr>
+                                    <td>Earthworks over threshold</td>
+                                    <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Resource consent</td>
+                                    <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> If near waterway</td>
+                                </tr>
+                                <tr>
+                                    <td>Coastal development</td>
+                                    <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Resource consent</td>
+                                    <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Coastal permit</td>
+                                </tr>
+                                <tr>
+                                    <td>Water take (bore, stream)</td>
+                                    <td>Not applicable</td>
+                                    <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Water permit</td>
+                                </tr>
+                                <tr>
+                                    <td>Discharge to water or land</td>
+                                    <td>Not applicable</td>
+                                    <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Discharge permit</td>
+                                </tr>
+                                <tr>
+                                    <td>Retaining wall &gt;1.5m</td>
+                                    <td><i class="fas fa-check-circle text-gumboots-light me-1"></i> Building consent</td>
+                                    <td>Sometimes — if near waterway</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <p class="text-muted small mt-2">Note: FNDC = Far North District Council. WDC = Whangarei District Council. KDC = Kaipara District Council. Rules vary by zone and location — this table is a general guide only.</p>
                 </div>
             </div>
@@ -396,35 +399,35 @@
                     <div class="process-step">
                         <div class="step-number">1</div>
                         <div>
-                            <h4 class="fw-bolder text-gumboots-light mb-2">Pre-Application</h4>
+                            <h3 class="h4 fw-bolder text-gumboots-light mb-2">Pre-Application</h3>
                             <p class="mb-0">FNDC offers pre-application meetings to discuss proposals before lodgement. This is strongly recommended for anything other than a standard complying activity. Gumboots regularly attends pre-app meetings to clarify engineering scope with FNDC processing officers before a formal application is prepared. Pre-application meetings are free and prevent costly RFI rounds later.</p>
                         </div>
                     </div>
                     <div class="process-step">
                         <div class="step-number">2</div>
                         <div>
-                            <h4 class="fw-bolder text-gumboots-light mb-2">Application Preparation</h4>
+                            <h3 class="h4 fw-bolder text-gumboots-light mb-2">Application Preparation</h3>
                             <p class="mb-0">The application package includes the consent form, a planning report (usually written by a planning consultant), and all technical engineering reports — geotechnical, stormwater, wastewater, civil design as applicable. Incomplete applications are rejected or suspended. Having all technical reports ready and consistent before lodgement is critical. Gumboots coordinates all engineering reports in-house to ensure they don't contradict each other.</p>
                         </div>
                     </div>
                     <div class="process-step">
                         <div class="step-number">3</div>
                         <div>
-                            <h4 class="fw-bolder text-gumboots-light mb-2">Processing — 20 Working Days</h4>
+                            <h3 class="h4 fw-bolder text-gumboots-light mb-2">Processing — 20 Working Days</h3>
                             <p class="mb-0">Non-notified resource consents must be decided within 20 working days. The clock stops if FNDC issues a Section 92 Request for Further Information — your response is required before processing resumes. Well-prepared applications with complete, consistent engineering reports rarely receive RFIs. The 20 working day clock also stops during any public notification period (for notified or limited notified consents).</p>
                         </div>
                     </div>
                     <div class="process-step">
                         <div class="step-number">4</div>
                         <div>
-                            <h4 class="fw-bolder text-gumboots-light mb-2">Consent Decision &amp; Conditions</h4>
+                            <h3 class="h4 fw-bolder text-gumboots-light mb-2">Consent Decision &amp; Conditions</h3>
                             <p class="mb-0">FNDC issues the consent with conditions. Engineering conditions typically require detailed design to be submitted before construction, construction monitoring during earthworks or foundation work, and sign-off reports on completion. Gumboots provides all of these as part of the project scope — we don't treat consent conditions as an afterthought.</p>
                         </div>
                     </div>
                     <div class="process-step">
                         <div class="step-number">5</div>
                         <div>
-                            <h4 class="fw-bolder text-gumboots-light mb-2">Compliance &amp; Sign-Off</h4>
+                            <h3 class="h4 fw-bolder text-gumboots-light mb-2">Compliance &amp; Sign-Off</h3>
                             <p class="mb-0">Engineering conditions must be signed off before the project is fully consented. For subdivisions, this includes the Section 224(c) certificate — required before LINZ can issue new titles. Gumboots manages engineering condition compliance and provides the completion reports required by FNDC.</p>
                         </div>
                     </div>
@@ -447,7 +450,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size:2rem;"><i class="fas fa-mountain"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Geotechnical Assessment</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Geotechnical Assessment</h3>
                             <p class="mb-0">Site suitability assessment, ground investigation, slope stability analysis, and foundation design recommendations. Required by FNDC for most sloped sites, subdivisions, and sites near hazards. Our geotechnical reports are accepted by FNDC and WDC without issue in the vast majority of cases.</p>
                         </div>
                     </div>
@@ -456,7 +459,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size:2rem;"><i class="fas fa-cloud-rain"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Stormwater Management Plan</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Stormwater Management Plan</h3>
                             <p class="mb-0">Stormwater quantity and quality management for the site — required for subdivisions, large earthworks, and commercial developments. We design detention, infiltration, and treatment systems to meet FNDC and NRC requirements. Our SMPs are coordinated with the geotechnical report to ensure consistency.</p>
                         </div>
                     </div>
@@ -465,7 +468,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size:2rem;"><i class="fas fa-tint"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">TP58 Wastewater Design</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">TP58 Wastewater Design</h3>
                             <p class="mb-0">On-site wastewater design for off-sewer lots — soil testing, system sizing, and consent report to TP58 standard. Required for most rural and coastal residential consents in Northland. We complete soil testing and design in-house, producing a single report for FNDC.</p>
                         </div>
                     </div>
@@ -474,7 +477,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size:2rem;"><i class="fas fa-road"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Civil &amp; Infrastructure Design</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Civil &amp; Infrastructure Design</h3>
                             <p class="mb-0">Roading, accessways, services layout, and infrastructure engineering for subdivisions and commercial developments. We work alongside your surveyor to ensure the engineering design is consistent with the proposed lot layout from day one — avoiding costly redesigns after consent lodgement.</p>
                         </div>
                     </div>
@@ -636,7 +639,7 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>Services</h4>
+                    <h2>Services</h2>
                     <ul>
                         <li><a href="geotechnical-engineering.html">Geotechnical Engineering</a></li>
                         <li><a href="geotechnical-report.html">Geotechnical Reports</a></li>
@@ -648,7 +651,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Key Areas</h4>
+                    <h2>Key Areas</h2>
                     <ul>
                         <li><a href="kerikeri.html">Kerikeri</a></li>
                         <li><a href="paihia.html">Paihia</a></li>

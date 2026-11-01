@@ -442,6 +442,7 @@
 }
 </script>
     <link href="css/site-fixes.css" rel="stylesheet" />
+    <script src="js/site-fixes.js" defer></script>
 </head>
 
 <body>
@@ -450,7 +451,7 @@
     <nav id="mainNav">
         <div class="container-main">
             <a href="/" class="nav-brand">Gumboots <span>Consulting Engineers</span></a>
-            <button class="nav-toggler" id="navToggler" aria-label="Toggle navigation">
+            <button class="nav-toggler" id="navToggler" aria-label="Menu" aria-controls="navLinks" aria-expanded="false">
                 <i class="fas fa-bars"></i>
             </button>
             <ul class="nav-links" id="navLinks">
@@ -675,7 +676,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-map-marked-alt"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">WDC Council Knowledge</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">WDC Council Knowledge</h3>
                             <p class="mb-0">We know Whangarei District Council's civil engineering requirements in detail. Our designs are prepared to match exactly what WDC expects, reducing re-submission rounds and consent delays for your Whangarei project.</p>
                         </div>
                     </div>
@@ -684,7 +685,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-clock"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Fast Turnaround</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Fast Turnaround</h3>
                             <p class="mb-0">Whangarei civil engineering projects get priority scheduling. We understand that development timelines matter and work efficiently to deliver consent-ready drawings without unnecessary delays.</p>
                         </div>
                     </div>
@@ -693,7 +694,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-ruler-combined"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Integrated Engineering</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Integrated Engineering</h3>
                             <p class="mb-0">We offer civil engineering alongside geotechnical assessment and wastewater design, so your Whangarei site can be fully engineered by one team &#8212; saving coordination time and keeping costs down.</p>
                         </div>
                     </div>
@@ -702,7 +703,7 @@
                     <div class="d-flex">
                         <div class="flex-shrink-0"><div class="service-icon" style="font-size: 2rem;"><i class="fas fa-dollar-sign"></i></div></div>
                         <div class="ms-4">
-                            <h4 class="h5 fw-bolder text-gumboots-light mb-2">Practical, Cost-Effective Solutions</h4>
+                            <h3 class="h5 fw-bolder text-gumboots-light mb-2">Practical, Cost-Effective Solutions</h3>
                             <p class="mb-0">We design civil systems that are compliant and constructable without gold-plating. Local knowledge of Whangarei's varied terrain means we pick the right solution first time, avoiding costly redesigns.</p>
                         </div>
                     </div>
@@ -763,7 +764,7 @@
                         <div class="card h-100 service-item border-0 shadow-sm">
                             <div class="card-body p-3 text-center">
                                 <div class="service-icon" style="font-size: 2rem;"><i class="fas fa-mountain"></i></div>
-                                <h4 class="h6 fw-bolder text-gumboots-light mb-2">Geotechnical Engineering Whangarei</h4>
+                                <h3 class="h6 fw-bolder text-gumboots-light mb-2">Geotechnical Engineering Whangarei</h3>
                             </div>
                         </div>
                     </a>
@@ -773,7 +774,7 @@
                         <div class="card h-100 service-item border-0 shadow-sm">
                             <div class="card-body p-3 text-center">
                                 <div class="service-icon" style="font-size: 2rem;"><i class="fas fa-tint"></i></div>
-                                <h4 class="h6 fw-bolder text-gumboots-light mb-2">TP58 Wastewater Design Whangarei</h4>
+                                <h3 class="h6 fw-bolder text-gumboots-light mb-2">TP58 Wastewater Design Whangarei</h3>
                             </div>
                         </div>
                     </a>
@@ -783,7 +784,7 @@
                         <div class="card h-100 service-item border-0 shadow-sm">
                             <div class="card-body p-3 text-center">
                                 <div class="service-icon" style="font-size: 2rem;"><i class="fas fa-vial"></i></div>
-                                <h4 class="h6 fw-bolder text-gumboots-light mb-2">Soil Testing Whangarei</h4>
+                                <h3 class="h6 fw-bolder text-gumboots-light mb-2">Soil Testing Whangarei</h3>
                             </div>
                         </div>
                     </a>
@@ -793,7 +794,7 @@
                         <div class="card h-100 service-item border-0 shadow-sm">
                             <div class="card-body p-3 text-center">
                                 <div class="service-icon" style="font-size: 2rem;"><i class="fas fa-cloud-rain"></i></div>
-                                <h4 class="h6 fw-bolder text-gumboots-light mb-2">Stormwater Design Whangarei</h4>
+                                <h3 class="h6 fw-bolder text-gumboots-light mb-2">Stormwater Design Whangarei</h3>
                             </div>
                         </div>
                     </a>
@@ -869,7 +870,7 @@
                     </div>
                 </div>
                 <div class="footer-col">
-                    <h4>Services</h4>
+                    <h2>Services</h2>
                     <ul>
                         <li><a href="civil-engineering.html">Civil Engineering</a></li>
                         <li><a href="geotechnical-engineering.html">Geotechnical Engineering</a></li>
@@ -882,7 +883,7 @@
                     </ul>
                 </div>
                 <div class="footer-col">
-                    <h4>Key Areas</h4>
+                    <h2>Key Areas</h2>
                     <ul>
                         <li><a href="kerikeri.html">Kerikeri</a></li>
                         <li><a href="paihia.html">Paihia</a></li>
@@ -892,7 +893,7 @@
                         <li><a href="dargaville.html">Dargaville</a></li>
                         <li><a href="whangarei.html">Whangarei</a></li>
                     </ul>
-                    <h4 style="margin-top:1.5rem;">Partners</h4>
+                    <h3 style="margin-top:1.5rem;">Partners</h3>
                     <div class="footer-partners">
                         <p><a href="https://www.kerigoldchalets.co.nz/kerikeri-accommodation">Kerigold Chalets</a> &#8212; Kerikeri Accommodation</p>
                         <p><a href="https://mobileautoairkerikeri.co.nz/">Mobile Auto Air</a> &#8212; Car Air Conditioning Kerikeri</p>
