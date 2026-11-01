@@ -10,27 +10,41 @@ concurrency:
   group: deploy
   cancel-in-progress: false
 
+env:
+  SITE_DIR: domains/gumbootsconsulting.co.nz/public_html
+  SSHPASS: ${{ secrets.PASSWORD }}
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
-      # Uploads only files changed since the last deploy.
+      - name: Set up SSH
+        run: |
+          sudo apt-get install -y -qq sshpass
+          mkdir -p ~/.ssh
+
+          # Pinned Hostinger host key. Deploys stop if the server's key changes.
+          echo "[${{ secrets.IP }}]:${{ secrets.PORT }} ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEhslOfznm4PtPc9w9On2Yx/w+wk0kYjUgFFONnusNG/" > ~/.ssh/known_hosts
+
+      - name: Check live site folder
+        run: |
+          sshpass -e ssh -p ${{ secrets.PORT }} ${{ secrets.USERNAME }}@${{ secrets.IP }} \
+            "test -f $SITE_DIR/index.html && command -v rsync"
+
+      # Uploads only files whose contents changed. Never deletes server files.
       # Excluded paths stay in the repo but never reach the live site.
-      - uses: SamKirkland/FTP-Deploy-Action@v4.3.5
-        with:
-          server: ${{ secrets.FTP_SERVER }}
-          username: ${{ secrets.FTP_USERNAME }}
-          password: ${{ secrets.FTP_PASSWORD }}
-          server-dir: ${{ secrets.FTP_SERVER_DIR }}
-          protocol: ftps
-          exclude: |
-            **/.git*
-            **/.git*/**
-            .github/**
-            .claude/**
-            plans/**
-            docs/**
-            gsc data/**
-            *.md
+      - name: Upload site
+        run: |
+          sshpass -e rsync -rlvz --checksum --chmod=D755,F644 \
+            -e "ssh -p ${{ secrets.PORT }}" \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='.claude/' \
+            --exclude='.gitignore' \
+            --exclude='plans/' \
+            --exclude='docs/' \
+            --exclude='gsc data/' \
+            --exclude='*.md' \
+            ./ ${{ secrets.USERNAME }}@${{ secrets.IP }}:$SITE_DIR/
