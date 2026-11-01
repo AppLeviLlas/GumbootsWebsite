@@ -35,6 +35,14 @@ Redirect 301 /soil-testing-paihia.html https://www.gumbootsconsulting.co.nz/paih
 # Redirect thin Coopers Beach soil testing page — pos 16.5, 2 impressions
 Redirect 301 /soil-testing-coopers-beach.html https://www.gumbootsconsulting.co.nz/coopers-beach.html
 
+# ============================================
+# Private Files
+# ============================================
+
+# Hide planning notes and working folders from the public
+RewriteRule \.md$ - [R=404,NC,L]
+RewriteRule ^(plans|docs|gsc.data|\.claude|\.github)(/|$) - [R=404,NC,L]
+
 # Additional Security Headers
 <IfModule mod_headers.c>
     # Prevent clickjacking

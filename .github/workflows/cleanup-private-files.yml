@@ -1,0 +1,42 @@
+name: Move private files off live site
+
+# One-off job. Moves planning notes out of public_html into a private backup folder.
+on:
+  workflow_dispatch:
+
+env:
+  SSHPASS: ${{ secrets.PASSWORD }}
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up SSH
+        run: |
+          sudo apt-get install -y -qq sshpass
+          mkdir -p ~/.ssh
+          echo "[${{ secrets.IP }}]:${{ secrets.PORT }} ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIEhslOfznm4PtPc9w9On2Yx/w+wk0kYjUgFFONnusNG/" > ~/.ssh/known_hosts
+
+      - name: Move private files to backup
+        run: |
+          sshpass -e ssh -p ${{ secrets.PORT }} ${{ secrets.USERNAME }}@${{ secrets.IP }} bash -s <<'EOF'
+          set -e
+          cd "$HOME/domains/gumbootsconsulting.co.nz/public_html"
+          mkdir -p "$HOME/private-backup-from-public_html"
+
+          echo "Found:"
+          find . -name '*.md' -o -path ./plans -o -path ./docs -o -path './gsc data' -o -path ./.claude | sort
+
+          for d in plans docs 'gsc data' .claude; do
+            if [ -e "$d" ]; then mv "$d" "$HOME/private-backup-from-public_html/"; fi
+          done
+          find . -name '*.md' -print0 | while IFS= read -r -d '' f; do
+            mkdir -p "$HOME/private-backup-from-public_html/$(dirname "$f")"
+            mv "$f" "$HOME/private-backup-from-public_html/$f"
+          done
+
+          echo "Backup now holds:"
+          find "$HOME/private-backup-from-public_html" -type f | sort
+          echo "Left in public_html:"
+          find . -name '*.md' | sort
+          EOF
