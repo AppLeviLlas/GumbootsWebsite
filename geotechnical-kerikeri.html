@@ -368,9 +368,11 @@
         .portfolio-caption { position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(to top, rgba(42,53,23,0.9) 0%, transparent 100%); color: #fff; padding: 2.5rem 1.25rem 1.1rem; font-size: 0.85rem; font-weight: 600; opacity: 0; transition: opacity 0.3s; z-index: 1; }
         .portfolio-item:hover .portfolio-caption { opacity: 1; }
     </style>
+    <link href="css/site-fixes.css" rel="stylesheet" />
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- Navigation-->
         <!-- Navigation -->
     <nav id="mainNav">
@@ -389,6 +391,8 @@
             </ul>
         </div>
     </nav>
+
+    <main id="main" tabindex="-1">
 
     <!-- Header-->
     <header class="masthead" id="page-top">
@@ -800,6 +804,8 @@
     </section>
 
         <!-- Footer -->
+    </main>
+
     <footer class="site-footer">
         <div class="container-main">
             <div class="footer-grid">

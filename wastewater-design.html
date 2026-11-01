@@ -331,9 +331,11 @@
         .service-area-links a { display: block; padding: 0.75rem 1rem; background: #fff; border: 1px solid #e2e8d8; border-radius: 6px; color: var(--gumboots-dark-green); text-decoration: none; font-weight: 500; font-size: 0.875rem; transition: all 0.15s; }
         .service-area-links a:hover { background: #f5f7f2; border-color: var(--gumboots-light-green); color: var(--gumboots-mid-green); }
     </style>
+    <link href="css/site-fixes.css" rel="stylesheet" />
 </head>
 
 <body>
+    <a class="skip-link" href="#main">Skip to content</a>
     <!-- Navigation -->
     <nav id="mainNav">
         <div class="container-main">
@@ -351,6 +353,8 @@
             </ul>
         </div>
     </nav>
+
+    <main id="main" tabindex="-1">
 
     <!-- Header-->
     <header class="masthead" id="page-top">
@@ -733,6 +737,8 @@
         </div>
     </section>
     <!-- Footer -->
+    </main>
+
     <footer class="site-footer">
         <div class="container-main">
             <div class="footer-grid">

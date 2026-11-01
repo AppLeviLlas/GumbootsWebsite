@@ -1,0 +1,159 @@
+/*
+ * Gumboots site-wide fixes: contrast, focus, skip link, tap targets.
+ * Loads after each page's own <style>, so equal-specificity rules here win.
+ */
+
+:root {
+    --fix-green:       #557222;
+    --fix-green-dark:  #2a3517;
+    --fix-green-light: #8bb244;
+    --fix-ink:         #1a1f10;
+    --fix-muted:       #5a6648;
+}
+
+
+/* ── Skip link ── */
+
+.skip-link {
+    position: fixed;
+    top: -4rem;
+    left: 1rem;
+    z-index: 3000;
+    padding: 0.75rem 1.1rem;
+    border-radius: 8px;
+    background: var(--fix-ink);
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    transition: top 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.skip-link:focus { top: 1rem; color: #fff; }
+
+main:focus { outline: none; }
+
+
+/* ── Focus ring and selection ── */
+
+/* White inner ring plus green outer ring reads on light and dark backgrounds */
+a:focus-visible,
+.btn:focus-visible,
+button:focus-visible,
+summary:focus-visible,
+[tabindex]:not([tabindex="-1"]):focus-visible {
+    outline: 2px solid var(--fix-green);
+    outline-offset: 2px;
+    box-shadow: 0 0 0 2px #fff;
+}
+
+::selection { background: var(--fix-green-light); color: var(--fix-ink); }
+
+
+/* ── Green buttons and badges: white text on darker green ── */
+
+.nav-cta { background: var(--fix-green) !important; }
+.nav-cta:hover { background: var(--fix-green-dark) !important; }
+
+.btn-gumboots-light,
+.btn-solid,
+.btn-green,
+.location-badge,
+.error-links .btn-primary,
+.m-email {
+    background-color: var(--fix-green);
+    border-color: var(--fix-green);
+    color: #fff;
+}
+
+.btn-gumboots-light:hover,
+.btn-solid:hover,
+.btn-green:hover,
+.error-links .btn-primary:hover {
+    background-color: var(--fix-green-dark);
+    border-color: var(--fix-green-dark);
+    color: #fff;
+}
+
+.section-label[style*="background"] { background: var(--fix-green) !important; }
+
+/* White text on the light green hover failed contrast */
+.btn-white:hover { color: var(--fix-ink); }
+
+
+/* ── Green text on light backgrounds ── */
+
+/* Icons keep the bright green: graphics need 3:1, which it meets */
+.text-gumboots-light:not(i),
+.nav-brand span,
+.section-label,
+.testi-author,
+.error-links .btn-secondary,
+.link-grid a {
+    color: var(--fix-green);
+}
+
+.error-links .btn-secondary { border-color: var(--fix-green); }
+
+/* Body links get an underline so they don't rely on colour alone */
+a[style*="--g-accent"] {
+    color: var(--fix-green) !important;
+    text-decoration: underline !important;
+    text-decoration-thickness: 1px !important;
+    text-underline-offset: 0.2em;
+    text-decoration-color: rgba(85, 114, 34, 0.45) !important;
+}
+
+a[style*="--g-accent"]:hover { text-decoration-color: currentColor !important; }
+
+/* Bootstrap defaults that miss 4.5:1 on light grey */
+a { color: var(--fix-green); }
+a:hover { color: var(--fix-green-dark); }
+.text-muted { color: var(--fix-muted) !important; }
+
+
+/* ── Footer ── */
+
+.site-footer .footer-brand p,
+.site-footer .footer-partners p,
+.site-footer .footer-bottom p,
+.site-footer .footer-bottom a,
+.site-footer .footer-bottom span,
+.site-footer .footer-col h4 {
+    color: rgba(255, 255, 255, 0.72) !important;
+}
+
+.site-footer .footer-col ul a,
+.site-footer .footer-partners a { color: rgba(255, 255, 255, 0.85); }
+
+.site-footer .footer-col ul a:hover,
+.site-footer .footer-partners a:hover,
+.site-footer .footer-bottom a:hover { color: var(--fix-green-light) !important; }
+
+/* Some pages set only the logo height, so the width="2048" attribute stretched it */
+.site-footer .footer-brand img { width: auto; max-width: 100%; }
+
+/* 44px tap targets for the social icons */
+.site-footer .footer-social { margin-left: -0.75rem; }
+
+.site-footer .footer-social a {
+    display: inline-grid;
+    place-items: center;
+    width: 44px;
+    height: 44px;
+    margin-right: 0.1rem;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.site-footer .footer-social a:hover { background: rgba(255, 255, 255, 0.08); }
+
+
+/* ── Motion ── */
+
+.hero-scroll { animation-iteration-count: 3; }
+
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .hero-scroll { animation: none; }
+    .skip-link { transition: none; }
+}

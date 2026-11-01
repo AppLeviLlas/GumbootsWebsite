@@ -920,9 +920,11 @@
         @media (min-width: 768px) { .mobile-cta { display: none; } }
         @media (max-width: 767px) { .site-footer { padding-bottom: 5rem; } }
     </style>
+    <link href="css/site-fixes.css" rel="stylesheet" />
 </head>
 
 <body id="page-top">
+    <a class="skip-link" href="#main">Skip to content</a>
 
     <!-- ── NAV ── -->
     <nav id="mainNav">
@@ -941,6 +943,8 @@
             </ul>
         </div>
     </nav>
+
+    <main id="main" tabindex="-1">
 
     <!-- ── HERO ── -->
     <section class="hero" id="page-top">
@@ -1274,6 +1278,8 @@
     </section>
 
     <!-- ── FOOTER ── -->
+    </main>
+
     <footer class="site-footer">
         <div class="container-main">
             <div class="footer-grid">
