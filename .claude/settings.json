@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python3 -c ':*)",
+      "Bash(python3.exe -c \"print\\('hello'\\)\")",
+      "Bash(py -3 -c \"print\\('hello'\\)\")",
+      "Bash(py -3 -c ':*)",
+      "Bash(grep -rn \"index.html\" /c/Users/pjwri/Desktop/Website/Gumboots/*.html)",
+      "Bash(gh api *)"
+    ]
+  }
+}

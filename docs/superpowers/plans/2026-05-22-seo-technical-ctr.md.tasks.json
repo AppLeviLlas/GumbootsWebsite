@@ -1,0 +1,39 @@
+{
+  "planPath": "docs/superpowers/plans/2026-05-22-seo-technical-ctr.md",
+  "tasks": [
+    {
+      "id": 1,
+      "subject": "Task 1: Add \"Areas We Serve\" sections to service hub pages",
+      "status": "pending",
+      "description": "**Goal:** Add a linked location grid to each of the 7 service hub pages so Google can discover the 50+ orphaned service+location combination pages.\n\n**Files:**\n- Modify: stormwater-design.html\n- Modify: geotechnical-engineering.html\n- Modify: structural-engineering.html\n- Modify: wastewater-design.html\n- Modify: civil-engineering.html\n- Modify: geotechnical-report.html\n- Modify: soil-testing.html\n\n**Acceptance Criteria:**\n- [ ] Each service hub page contains a section with id=\"areas-we-serve\"\n- [ ] Every location variant linked with anchor text \"[Service] in [Location]\"\n- [ ] CSS .service-area-links present in each page style block\n\n**Verify:** powershell Select-String for 'areas-we-serve' in each file — expect 1 match each\n\n```json:metadata\n{\"files\":[\"stormwater-design.html\",\"geotechnical-engineering.html\",\"structural-engineering.html\",\"wastewater-design.html\",\"civil-engineering.html\",\"geotechnical-report.html\",\"soil-testing.html\"],\"verifyCommand\":\"Select-String areas-we-serve\",\"acceptanceCriteria\":[\"7 service hub pages contain id=areas-we-serve section\",\"All location variant links present\",\"CSS .service-area-links added\"]}\n```"
+    },
+    {
+      "id": 2,
+      "subject": "Task 2: Add \"Our Services\" sections to location hub pages",
+      "status": "pending",
+      "description": "**Goal:** Add a service link grid to each of the 7 location hub pages so they pass PageRank to all service+location combination pages.\n\n**Files:**\n- Modify: kerikeri.html, paihia.html, whangarei.html, bay-of-islands.html, dargaville.html, mangonui.html, coopers-beach.html\n\n**Acceptance Criteria:**\n- [ ] Each location hub page contains id=\"local-services\" section\n- [ ] All 6 service+location pages linked per location\n- [ ] CSS .service-area-links present\n\n**Verify:** Select-String 'local-services' in each file — expect 1 match each\n\n```json:metadata\n{\"files\":[\"kerikeri.html\",\"paihia.html\",\"whangarei.html\",\"bay-of-islands.html\",\"dargaville.html\",\"mangonui.html\",\"coopers-beach.html\"],\"verifyCommand\":\"Select-String local-services\",\"acceptanceCriteria\":[\"7 location hub pages contain id=local-services section\",\"6 service links per location\",\"CSS .service-area-links added\"]}\n```"
+    },
+    {
+      "id": 3,
+      "subject": "Task 3: CTR meta rewrites — Priority A (positions 5–15)",
+      "status": "pending",
+      "blockedBy": [1, 2],
+      "description": "**Goal:** Rewrite title and description meta tags on 5 pages at positions 5–15.\n\n**Files:** erosion-control-northland.html, wastewater-design.html, civil-engineering-bay-of-islands.html, soil-testing-kerikeri.html, dargaville.html\n\n**Acceptance Criteria:**\n- [ ] All 7 meta tag types updated per file\n- [ ] All titles ≤60 chars\n- [ ] All descriptions ≤155 chars\n\n**Verify:** Regex match title/desc lengths in each file\n\n```json:metadata\n{\"files\":[\"erosion-control-northland.html\",\"wastewater-design.html\",\"civil-engineering-bay-of-islands.html\",\"soil-testing-kerikeri.html\",\"dargaville.html\"],\"verifyCommand\":\"regex title/desc length check\",\"acceptanceCriteria\":[\"All titles ≤60 chars\",\"All descriptions ≤155 chars\",\"All 7 meta tag types updated\"]}\n```"
+    },
+    {
+      "id": 4,
+      "subject": "Task 4: CTR meta rewrites — Priority B (positions 15–25)",
+      "status": "pending",
+      "blockedBy": [1],
+      "description": "**Goal:** Rewrite meta snippets on 7 high-impression pages at positions 15–25.\n\n**Files:** engineering-consulting.html, stormwater-design.html, geotechnical-report.html, civil-engineering-kerikeri.html, geotechnical-engineering-paihia.html, structural-engineering.html, geotechnical-engineering-northland.html\n\n**Acceptance Criteria:**\n- [ ] All 7 meta tag types updated per file\n- [ ] All titles ≤60 chars\n- [ ] All descriptions ≤155 chars\n\n**Verify:** Regex match title/desc lengths in each file\n\n```json:metadata\n{\"files\":[\"engineering-consulting.html\",\"stormwater-design.html\",\"geotechnical-report.html\",\"civil-engineering-kerikeri.html\",\"geotechnical-engineering-paihia.html\",\"structural-engineering.html\",\"geotechnical-engineering-northland.html\"],\"verifyCommand\":\"regex title/desc length check\",\"acceptanceCriteria\":[\"All titles ≤60 chars\",\"All descriptions ≤155 chars\",\"All 7 meta tag types updated\"]}\n```"
+    },
+    {
+      "id": 5,
+      "subject": "Task 5: Update sitemap.xml lastmod dates",
+      "status": "pending",
+      "blockedBy": [1, 2, 3, 4],
+      "description": "**Goal:** Update lastmod to 2026-05-22 for all 21 modified pages in sitemap.xml.\n\n**Files:** sitemap.xml\n\n**Acceptance Criteria:**\n- [ ] All 21 modified pages in sitemap\n- [ ] Their lastmod = 2026-05-22\n- [ ] No pages removed\n\n**Verify:** (Select-String -Path sitemap.xml -Pattern '2026-05-22').Count ≥ 21\n\n```json:metadata\n{\"files\":[\"sitemap.xml\"],\"verifyCommand\":\"(Select-String -Path sitemap.xml -Pattern '2026-05-22').Count\",\"acceptanceCriteria\":[\"21+ pages have lastmod 2026-05-22\",\"No pages removed from sitemap\"]}\n```"
+    }
+  ],
+  "lastUpdated": "2026-05-22T00:00:00"
+}

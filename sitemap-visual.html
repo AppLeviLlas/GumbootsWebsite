@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Gumboots Website Sitemap</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Segoe UI', system-ui, sans-serif; background: #f5f7f2; color: #1a1f10; padding: 2rem; }
+
+        h1 { color: #2A3517; font-size: 1.5rem; font-weight: 800; margin-bottom: 0.25rem; }
+        .subtitle { color: #5a6648; font-size: 0.85rem; margin-bottom: 2.5rem; }
+
+        /* ── CONNECTOR LINES ── */
+        .tree { display: flex; flex-direction: column; align-items: center; gap: 0; }
+        .vline { width: 2px; background: #c8d8a0; height: 24px; }
+        .hbar { display: flex; align-items: flex-start; gap: 0; }
+        .hbar-line { height: 2px; background: #c8d8a0; flex: 1; margin-top: 14px; }
+        .branch { display: flex; flex-direction: column; align-items: center; }
+
+        /* ── NODES ── */
+        .node {
+            border-radius: 8px;
+            padding: 0.5rem 1rem;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-align: center;
+            text-decoration: none;
+            white-space: nowrap;
+            display: inline-block;
+        }
+        .node-home {
+            background: #2A3517; color: #fff;
+            font-size: 0.9rem; padding: 0.6rem 1.5rem;
+            border-radius: 10px;
+        }
+        .node-cat {
+            background: #557222; color: #fff;
+            font-size: 0.78rem; padding: 0.45rem 0.9rem;
+            border-radius: 8px;
+        }
+        .node-service {
+            background: #729827; color: #fff;
+            font-size: 0.72rem; padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+        }
+        .node-location {
+            background: #8BB244; color: #fff;
+            font-size: 0.72rem; padding: 0.35rem 0.75rem;
+            border-radius: 6px;
+        }
+        .node-combo {
+            background: #fff; color: #2A3517;
+            border: 1.5px solid #c8d8a0;
+            font-size: 0.65rem; font-weight: 500;
+            padding: 0.25rem 0.6rem;
+            border-radius: 5px;
+        }
+
+        /* ── LEVEL LABELS ── */
+        .level-label {
+            font-size: 0.65rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: #8a9e6a;
+            margin-bottom: 0.5rem;
+        }
+
+        /* ── SECTIONS ── */
+        section { margin-bottom: 2.5rem; }
+        section h2 {
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: #8a9e6a;
+            border-bottom: 2px solid #c8d8a0;
+            padding-bottom: 0.4rem;
+            margin-bottom: 1.25rem;
+        }
+
+        /* ── GRID LAYOUTS ── */
+        .grid-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 0.75rem; }
+        .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.75rem; }
+        .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0.75rem; }
+        .grid-5 { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.75rem; }
+        .grid-7 { display: grid; grid-template-columns: repeat(7, 1fr); gap: 0.75rem; }
+
+        /* ── COMBO TABLE ── */
+        .combo-table { width: 100%; border-collapse: collapse; font-size: 0.68rem; }
+        .combo-table th {
+            background: #2A3517; color: #fff;
+            padding: 0.4rem 0.5rem;
+            text-align: center;
+            font-weight: 700;
+            font-size: 0.62rem;
+        }
+        .combo-table td {
+            padding: 0.3rem 0.4rem;
+            text-align: center;
+            vertical-align: middle;
+        }
+        .combo-table tr:nth-child(even) td { background: #f0f4e8; }
+        .combo-table tr:nth-child(odd) td { background: #fff; }
+        .combo-table .row-label {
+            background: #557222 !important;
+            color: #fff;
+            font-weight: 700;
+            font-size: 0.62rem;
+            white-space: nowrap;
+        }
+        .pill {
+            display: inline-block;
+            background: #fff;
+            border: 1.5px solid #8BB244;
+            border-radius: 4px;
+            padding: 0.15rem 0.4rem;
+            font-size: 0.62rem;
+            color: #2A3517;
+            font-weight: 500;
+        }
+        .pill-missing {
+            display: inline-block;
+            background: #f8f8f8;
+            border: 1.5px dashed #ccc;
+            border-radius: 4px;
+            padding: 0.15rem 0.4rem;
+            font-size: 0.62rem;
+            color: #aaa;
+        }
+
+        /* ── TOP DIAGRAM ── */
+        .top-diagram {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 0;
+            margin-bottom: 2.5rem;
+            background: #fff;
+            border: 1.5px solid #c8d8a0;
+            border-radius: 12px;
+            padding: 2rem;
+        }
+        .top-row { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+        .connector-down { width: 2px; background: #c8d8a0; height: 20px; }
+        .connector-h { display: flex; align-items: center; gap: 0; }
+
+        /* ── LEGEND ── */
+        .legend { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 2rem; }
+        .legend-item { display: flex; align-items: center; gap: 0.4rem; font-size: 0.72rem; color: #5a6648; }
+        .legend-dot { width: 12px; height: 12px; border-radius: 3px; flex-shrink: 0; }
+
+        @media print {
+            body { padding: 1rem; background: #fff; }
+        }
+    </style>
+</head>
+<body>
+
+<h1>Gumboots Consulting Engineers — Website Sitemap</h1>
+<p class="subtitle">gumbootsconsulting.co.nz &nbsp;·&nbsp; Generated 2026-03-21</p>
+
+<!-- LEGEND -->
+<div class="legend">
+    <div class="legend-item"><div class="legend-dot" style="background:#2A3517"></div> Homepage</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#557222"></div> Category / Service Hub</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#729827"></div> Service Page</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#8BB244"></div> Location Hub</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#fff; border:1.5px solid #8BB244"></div> Service × Location Combo</div>
+    <div class="legend-item"><div class="legend-dot" style="background:#f8f8f8; border:1.5px dashed #ccc"></div> Not yet created</div>
+</div>
+
+<!-- TIER 1: HOMEPAGE -->
+<section>
+    <h2>Tier 1 — Homepage</h2>
+    <div style="text-align:center;">
+        <span class="node node-home">index.html &nbsp;·&nbsp; Homepage</span>
+    </div>
+</section>
+
+<!-- TIER 2: SERVICE HUBS -->
+<section>
+    <h2>Tier 2 — Service Hub Pages (GBP Category Alignment)</h2>
+    <div class="grid-4">
+        <div class="node node-service">geotechnical-engineering.html<br><small style="opacity:.7">Geotechnical Engineer</small></div>
+        <div class="node node-service">civil-engineering.html<br><small style="opacity:.7">Civil Engineer / Company</small></div>
+        <div class="node node-service">soil-testing.html<br><small style="opacity:.7">Soil Testing Service</small></div>
+        <div class="node node-service">engineering-consulting.html<br><small style="opacity:.7">Engineering Consultant</small></div>
+        <div class="node node-service">wastewater-design.html<br><small style="opacity:.7">TP58 Wastewater Design</small></div>
+        <div class="node node-service">stormwater-design.html<br><small style="opacity:.7">Stormwater Design</small></div>
+        <div class="node node-service">structural-engineering.html<br><small style="opacity:.7">Structural Engineering</small></div>
+        <div class="node node-service">monitoring-services.html<br><small style="opacity:.7">Construction Monitoring</small></div>
+    </div>
+</section>
+
+<!-- TIER 3: LOCATION HUBS -->
+<section>
+    <h2>Tier 3 — Location Hub Pages</h2>
+    <div class="grid-7">
+        <div class="node node-location">kerikeri.html<br><small style="opacity:.8">Kerikeri</small></div>
+        <div class="node node-location">paihia.html<br><small style="opacity:.8">Paihia</small></div>
+        <div class="node node-location">bay-of-islands.html<br><small style="opacity:.8">Bay of Islands</small></div>
+        <div class="node node-location">mangonui.html<br><small style="opacity:.8">Mangonui</small></div>
+        <div class="node node-location">coopers-beach.html<br><small style="opacity:.8">Coopers Beach</small></div>
+        <div class="node node-location">dargaville.html<br><small style="opacity:.8">Dargaville</small></div>
+        <div class="node node-location">whangarei.html<br><small style="opacity:.8">Whangarei</small></div>
+    </div>
+    <p style="font-size:0.7rem;color:#8a9e6a;margin-top:0.75rem;">Also: <strong>geotechnical-engineering-northland.html</strong>, <strong>tp58-wastewater-northland.html</strong>, <strong>stormwater-design-northland.html</strong> (Northland regional pages)</p>
+</section>
+
+<!-- TIER 4: COMBO TABLE -->
+<section>
+    <h2>Tier 4 — Service × Location Combo Pages</h2>
+    <table class="combo-table">
+        <thead>
+            <tr>
+                <th style="text-align:left;min-width:140px;">Service</th>
+                <th>Kerikeri</th>
+                <th>Paihia</th>
+                <th>Bay of Islands</th>
+                <th>Mangonui</th>
+                <th>Coopers Beach</th>
+                <th>Dargaville</th>
+                <th>Whangarei</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="row-label">Geotechnical Engineering</td>
+                <td><span class="pill">…kerikeri</span></td>
+                <td><span class="pill">…paihia</span></td>
+                <td><span class="pill">…bay-of-islands</span></td>
+                <td><span class="pill">…mangonui</span></td>
+                <td><span class="pill">…coopers-beach</span></td>
+                <td><span class="pill">…dargaville</span></td>
+                <td><span class="pill">…whangarei</span></td>
+            </tr>
+            <tr>
+                <td class="row-label">TP58 Wastewater</td>
+                <td><span class="pill">…kerikeri</span></td>
+                <td><span class="pill">…paihia</span></td>
+                <td><span class="pill">…bay-of-islands</span></td>
+                <td><span class="pill">…mangonui</span></td>
+                <td><span class="pill">…coopers-beach</span></td>
+                <td><span class="pill">…dargaville</span></td>
+                <td><span class="pill">…whangarei</span></td>
+            </tr>
+            <tr>
+                <td class="row-label">Stormwater Design</td>
+                <td><span class="pill">…kerikeri</span></td>
+                <td><span class="pill">…paihia</span></td>
+                <td><span class="pill">…bay-of-islands</span></td>
+                <td><span class="pill">…mangonui</span></td>
+                <td><span class="pill">…coopers-beach</span></td>
+                <td><span class="pill">…dargaville</span></td>
+                <td><span class="pill">…whangarei</span></td>
+            </tr>
+            <tr>
+                <td class="row-label">Structural Engineering</td>
+                <td><span class="pill">…kerikeri</span></td>
+                <td><span class="pill">…paihia</span></td>
+                <td><span class="pill">…bay-of-islands</span></td>
+                <td><span class="pill">…mangonui</span></td>
+                <td><span class="pill">…coopers-beach</span></td>
+                <td><span class="pill">…dargaville</span></td>
+                <td><span class="pill">…whangarei</span></td>
+            </tr>
+            <tr>
+                <td class="row-label">Soil Testing</td>
+                <td><span class="pill">…kerikeri</span></td>
+                <td><span class="pill">…paihia</span></td>
+                <td><span class="pill">…bay-of-islands</span></td>
+                <td><span class="pill">…mangonui</span></td>
+                <td><span class="pill">…coopers-beach</span></td>
+                <td><span class="pill">…dargaville</span></td>
+                <td><span class="pill">…whangarei</span></td>
+            </tr>
+            <tr>
+                <td class="row-label">Civil Engineering</td>
+                <td><span class="pill">…kerikeri</span></td>
+                <td><span class="pill">…paihia</span></td>
+                <td><span class="pill">…bay-of-islands</span></td>
+                <td><span class="pill">…mangonui</span></td>
+                <td><span class="pill">…coopers-beach</span></td>
+                <td><span class="pill">…dargaville</span></td>
+                <td><span class="pill">…whangarei</span></td>
+            </tr>
+        </tbody>
+    </table>
+    <p style="font-size:0.68rem;color:#8a9e6a;margin-top:0.6rem;">
+        Pill text is abbreviated — full filenames follow the pattern <strong>service-slug-location-slug.html</strong> &nbsp;·&nbsp;
+        Dashed border = gap in coverage (opportunity for future pages)
+    </p>
+</section>
+
+<!-- PAGE COUNT -->
+<section>
+    <h2>Page Count Summary</h2>
+    <div class="grid-4" style="gap:1rem;">
+        <div style="background:#2A3517;color:#fff;border-radius:10px;padding:1rem;text-align:center;">
+            <div style="font-size:2rem;font-weight:900;line-height:1;">1</div>
+            <div style="font-size:0.7rem;opacity:0.7;margin-top:0.25rem;">Homepage</div>
+        </div>
+        <div style="background:#557222;color:#fff;border-radius:10px;padding:1rem;text-align:center;">
+            <div style="font-size:2rem;font-weight:900;line-height:1;">8</div>
+            <div style="font-size:0.7rem;opacity:0.7;margin-top:0.25rem;">Service Hub Pages</div>
+        </div>
+        <div style="background:#729827;color:#fff;border-radius:10px;padding:1rem;text-align:center;">
+            <div style="font-size:2rem;font-weight:900;line-height:1;">7</div>
+            <div style="font-size:0.7rem;opacity:0.7;margin-top:0.25rem;">Location Hub Pages</div>
+        </div>
+        <div style="background:#8BB244;color:#fff;border-radius:10px;padding:1rem;text-align:center;">
+            <div style="font-size:2rem;font-weight:900;line-height:1;">45</div>
+            <div style="font-size:0.7rem;opacity:0.7;margin-top:0.25rem;">Service × Location Combos</div>
+        </div>
+    </div>
+    <div style="margin-top:1rem;background:#fff;border:1.5px solid #c8d8a0;border-radius:8px;padding:1rem;font-size:0.75rem;color:#5a6648;">
+        <strong style="color:#2A3517;">Total indexed pages: 61</strong> &nbsp;(excl. 404, northland regional pages, and geotechnical-kerikeri redirect)
+        &nbsp;·&nbsp; <strong style="color:#729827;">Full coverage — no gaps remaining across all 6 services × 7 locations.</strong>
+    </div>
+</section>
+
+</body>
+</html>

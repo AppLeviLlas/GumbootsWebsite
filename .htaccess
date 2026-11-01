@@ -1,0 +1,91 @@
+# Gumboots Consulting Engineers - .htaccess Configuration
+# Purpose: Redirect non-www to www, force HTTPS, handle errors, and manage duplicate pages
+# Created: 2026-02-14
+# Updated: 2026-03-05 - Added 404 error page and improved redirects
+
+# Enable RewriteEngine
+RewriteEngine On
+
+# ============================================
+# HTTPS and WWW Redirects (Combined for efficiency)
+# ============================================
+
+# Redirect all non-HTTPS and non-www to https://www
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\. [NC]
+RewriteCond %{HTTP_HOST} ^(?:www\.)?(.+)$ [NC]
+RewriteRule ^(.*)$ https://www.%1/$1 [L,R=301]
+
+# ============================================
+# Duplicate Page Redirects
+# ============================================
+
+# Redirect /index.html to canonical homepage (prevents duplicate canonical URL)
+Redirect 301 /index.html https://www.gumbootsconsulting.co.nz/
+
+# Redirect duplicate Kerikeri page to main version (consolidate SEO authority)
+Redirect 301 /geotechnical-kerikeri.html https://www.gumbootsconsulting.co.nz/geotechnical-engineering-kerikeri.html
+
+# Redirect thin Coopers Beach geotech page — 2 impressions, pos 77.5
+Redirect 301 /geotechnical-engineering-coopers-beach.html https://www.gumbootsconsulting.co.nz/coopers-beach.html
+
+# Redirect thin Paihia soil testing page — pos 44.5, 10 impressions
+Redirect 301 /soil-testing-paihia.html https://www.gumbootsconsulting.co.nz/paihia.html
+
+# Redirect thin Coopers Beach soil testing page — pos 16.5, 2 impressions
+Redirect 301 /soil-testing-coopers-beach.html https://www.gumbootsconsulting.co.nz/coopers-beach.html
+
+# Additional Security Headers
+<IfModule mod_headers.c>
+    # Prevent clickjacking
+    Header always set X-Frame-Options "SAMEORIGIN"
+    
+    # Prevent MIME type sniffing
+    Header always set X-Content-Type-Options "nosniff"
+    
+    # Enable XSS protection
+    Header always set X-XSS-Protection "1; mode=block"
+    
+    # Referrer Policy
+    Header always set Referrer-Policy "strict-origin-when-cross-origin"
+
+    # HSTS - instruct browsers to always use HTTPS (max-age = 1 year)
+    Header always set Strict-Transport-Security "max-age=31536000; includeSubDomains; preload"
+</IfModule>
+
+# Compression for better performance
+<IfModule mod_deflate.c>
+    AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Browser Caching
+<IfModule mod_expires.c>
+    ExpiresActive On
+    
+    # Images
+    ExpiresByType image/jpeg "access plus 1 year"
+    ExpiresByType image/png "access plus 1 year"
+    ExpiresByType image/webp "access plus 1 year"
+    ExpiresByType image/svg+xml "access plus 1 year"
+    ExpiresByType image/x-icon "access plus 1 year"
+    
+    # CSS and JavaScript
+    ExpiresByType text/css "access plus 1 month"
+    ExpiresByType application/javascript "access plus 1 month"
+    
+    # HTML
+    ExpiresByType text/html "access plus 1 hour"
+</IfModule>
+
+# Prevent directory browsing
+Options -Indexes
+
+# ============================================
+# Custom Error Pages
+# ============================================
+
+# 404 Not Found - Custom branded error page
+ErrorDocument 404 /404.html
+
+# 500 Internal Server Error (optional - create if needed)
+# ErrorDocument 500 /500.html

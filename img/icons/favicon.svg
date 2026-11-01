@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Background circle -->
+  <circle cx="32" cy="32" r="32" fill="#2A3517"/>
+  
+  <!-- Gumboot shape -->
+  <path d="M 20 18 Q 20 15 23 15 L 41 15 Q 44 15 44 18 L 44 28 Q 44 30 42 30 L 42 42 Q 42 48 36 48 L 28 48 Q 22 48 22 42 L 22 30 Q 20 30 20 28 Z" 
+        fill="#729827" 
+        stroke="#8BB244" 
+        stroke-width="1.5"/>
+  
+  <!-- Boot sole -->
+  <ellipse cx="32" cy="48" rx="8" ry="3" fill="#1a2010"/>
+  
+  <!-- Boot detail line -->
+  <line x1="22" y1="30" x2="42" y2="30" stroke="#557222" stroke-width="2"/>
+  
+  <!-- Letter G -->
+  <text x="32" y="38" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="white" text-anchor="middle">G</text>
+</svg>
