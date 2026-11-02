@@ -55,7 +55,7 @@ summary:focus-visible,
 /* ── Green buttons and badges: white text on darker green ── */
 
 .nav-cta { background: var(--fix-green) !important; }
-.nav-cta:hover { background: var(--fix-green-dark) !important; color: #fff !important; }
+.nav-links .nav-cta:hover { background: var(--fix-green-dark) !important; color: #fff !important; }
 
 /* Call-to-action panels: same darker greens, so white text passes across the gradient */
 .cta-box { background: linear-gradient(135deg, var(--fix-green), var(--fix-green-dark)); }

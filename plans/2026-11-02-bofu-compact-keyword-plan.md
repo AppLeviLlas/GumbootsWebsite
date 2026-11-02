@@ -9,6 +9,7 @@
 
 - **Gumboots owns engineering:** geotech, soil testing, erosion & sediment control, retaining walls, stormwater, wastewater/TP58/septic, structural, subdivision engineering
 - **Far North Resource Consents owns consents and planning:** resource consents, planning, development feasibility, subdivision consent. Gumboots sends that intent and link equity to resourceconsent.co.nz and doesn't compete for it.
+- **Partner covers the Far North District only.** Copy on Whangarei, Kaipara and Coromandel pages must not say the partner handles consents there.
 
 ## Limits
 
