@@ -28,7 +28,10 @@
     transition: top 0.2s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
-.skip-link:focus { top: 1rem; color: #fff; }
+.skip-link:focus,
+.skip-link:hover { color: #fff; }
+
+.skip-link:focus { top: 1rem; }
 
 main:focus { outline: none; }
 
@@ -59,7 +62,7 @@ summary:focus-visible,
 .btn-green,
 .location-badge,
 .error-links .btn-primary,
-.m-email {
+.mobile-cta .m-email {
     background-color: var(--fix-green);
     border-color: var(--fix-green);
     color: #fff;
@@ -75,6 +78,14 @@ summary:focus-visible,
 }
 
 .section-label[style*="background"] { background: var(--fix-green) !important; }
+
+/* Hover states that used the bright green */
+.topic-nav a:hover {
+    background: var(--fix-green);
+    border-color: var(--fix-green);
+}
+
+.contact-card a:hover { color: var(--fix-green); }
 
 /* White text on the light green hover failed contrast */
 .btn-white:hover { color: var(--fix-ink); }
@@ -105,9 +116,13 @@ a[style*="--g-accent"] {
 
 a[style*="--g-accent"]:hover { text-decoration-color: currentColor !important; }
 
-/* Bootstrap defaults that miss 4.5:1 on light grey */
-a { color: var(--fix-green); }
-a:hover { color: var(--fix-green-dark); }
+/* Bootstrap defaults that miss 4.5:1 on light grey. Set through Bootstrap's
+   own variables so styled links keep their colours and hover states. */
+:root {
+    --bs-link-color: var(--fix-green);
+    --bs-link-hover-color: var(--fix-green-dark);
+}
+
 .text-muted { color: var(--fix-muted) !important; }
 
 
