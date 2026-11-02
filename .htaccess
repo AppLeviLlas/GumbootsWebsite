@@ -35,6 +35,21 @@ Redirect 301 /soil-testing-paihia.html https://www.gumbootsconsulting.co.nz/paih
 # Redirect thin Coopers Beach soil testing page — pos 16.5, 2 impressions
 Redirect 301 /soil-testing-coopers-beach.html https://www.gumbootsconsulting.co.nz/coopers-beach.html
 
+# Consent and planning pages go to the partner, Far North Resource Consents (2026-11-02)
+Redirect 301 /resource-consent-northland.html https://resourceconsent.co.nz/resource-consent.html
+Redirect 301 /planning-consultant-paihia.html https://resourceconsent.co.nz/resource-consent.html
+Redirect 301 /planning-consultant-kerikeri.html https://resourceconsent.co.nz/resource-consent.html
+Redirect 301 /subdivision-consultant-northland.html https://resourceconsent.co.nz/subdivision-consent.html
+
+# Regional pages merged into their main service pages (2026-11-02)
+Redirect 301 /tp58-wastewater-northland.html https://www.gumbootsconsulting.co.nz/wastewater-design.html
+Redirect 301 /stormwater-design-northland.html https://www.gumbootsconsulting.co.nz/stormwater-design.html
+
+# FAQ pages folded into their service pages (2026-11-02)
+Redirect 301 /faq-geotechnical-engineering-coromandel.html https://www.gumbootsconsulting.co.nz/geotechnical-engineering-coromandel.html
+Redirect 301 /faq-tp58-wastewater-coromandel.html https://www.gumbootsconsulting.co.nz/tp58-wastewater-coromandel.html
+Redirect 301 /faq-geotechnical-engineering-northland.html https://www.gumbootsconsulting.co.nz/geotechnical-engineering-northland.html
+
 # ============================================
 # Private Files
 # ============================================

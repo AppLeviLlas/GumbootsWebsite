@@ -100,32 +100,10 @@
     </url>
 
     <!-- Planning & Consent Pages -->
-    <url>
-        <loc>https://www.gumbootsconsulting.co.nz/subdivision-consultant-northland.html</loc>
-        <lastmod>2026-06-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://www.gumbootsconsulting.co.nz/planning-consultant-kerikeri.html</loc>
-        <lastmod>2026-06-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://www.gumbootsconsulting.co.nz/planning-consultant-paihia.html</loc>
-        <lastmod>2026-06-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    <url>
-        <loc>https://www.gumbootsconsulting.co.nz/resource-consent-northland.html</loc>
-        <lastmod>2026-06-17</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-
-    <!-- Geotechnical Engineering Location Pages -->
+    
+    
+    
+    
     <url>
         <loc>https://www.gumbootsconsulting.co.nz/geotechnical-engineering-kerikeri.html</loc>
         <lastmod>2026-03-05</lastmod>
@@ -217,12 +195,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://www.gumbootsconsulting.co.nz/tp58-wastewater-northland.html</loc>
-        <lastmod>2026-03-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+    
     <url>
         <loc>https://www.gumbootsconsulting.co.nz/tp58-wastewater-mangonui.html</loc>
         <lastmod>2026-03-05</lastmod>
@@ -261,12 +234,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://www.gumbootsconsulting.co.nz/stormwater-design-northland.html</loc>
-        <lastmod>2026-03-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
+    
     <url>
         <loc>https://www.gumbootsconsulting.co.nz/stormwater-design-mangonui.html</loc>
         <lastmod>2026-03-05</lastmod>
@@ -735,24 +703,9 @@
     </url>
 
     <!-- FAQ Pages -->
-    <url>
-        <loc>https://www.gumbootsconsulting.co.nz/faq-geotechnical-engineering-northland.html</loc>
-        <lastmod>2026-06-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://www.gumbootsconsulting.co.nz/faq-geotechnical-engineering-coromandel.html</loc>
-        <lastmod>2026-06-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    <url>
-        <loc>https://www.gumbootsconsulting.co.nz/faq-tp58-wastewater-coromandel.html</loc>
-        <lastmod>2026-06-22</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
+    
+    
+    
 
     <url>
         <loc>https://www.gumbootsconsulting.co.nz/pre-purchase-land-assessment-northland.html</loc>

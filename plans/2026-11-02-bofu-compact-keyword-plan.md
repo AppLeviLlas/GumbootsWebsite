@@ -168,11 +168,11 @@ Move any unique content across, then 301.
 
 | # | Page | Slug | Evidence |
 |---|---|---|---|
-| 1 | Subdivision Engineering Whangarei | `subdivision-engineering-whangarei.html` | Cluster 1,037 imps, pos 19.5, 0 clicks |
+| 1 | Subdivision Engineering Whangarei (LIVE 2026-11-02) | `subdivision-engineering-whangarei.html` | Cluster 1,037 imps, pos 19.5, 0 clicks |
 | 2 | Pre-purchase land assessment (LIVE 2026-11-02, prices TODO) | `pre-purchase-land-assessment-northland.html` | land assessment whangarei 98 · land assessment northland 36 · site suitability searches |
-| 3 | Whitianga / Mercury Bay | `whitianga.html` | mercury bay civil design 68 (p6.6) with no page; Coromandel converts at 3.4% |
-| 4 | Slope stability & landslip | `slope-stability-northland.html` | slope stabilisation hokianga 36 (p39); "slope stability" on 37 pages, no landing page |
-| 5 | Foundation design (optional) | `foundation-design-northland.html` | Structural & foundation cluster 102 imps |
+| 3 | Whitianga / Mercury Bay (LIVE 2026-11-02) | `whitianga.html` | mercury bay civil design 68 (p6.6) with no page; Coromandel converts at 3.4% |
+| 4 | Slope stability & landslip (LIVE 2026-11-02) | `slope-stability-northland.html` | slope stabilisation hokianga 36 (p39); "slope stability" on 37 pages, no landing page |
+| 5 | Foundation design (LIVE 2026-11-02) | `foundation-design-northland.html` | Structural & foundation cluster 102 imps |
 
 ### 3.1 Subdivision: engineering on Gumboots, consent on the other site
 
