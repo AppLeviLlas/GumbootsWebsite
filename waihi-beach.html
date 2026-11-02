@@ -266,7 +266,20 @@
         document.querySelectorAll('#navLinks a').forEach(link => { link.addEventListener('click', () => { document.getElementById('navLinks').classList.remove('open'); }); });
     </script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"LocalBusiness","name":"Gumboots Consulting Engineers – Waihi Beach","image":"https://www.gumbootsconsulting.co.nz/img/gumboot-logo.webp","telephone":"+64204486697","email":"office@gumbootsconsulting.co.nz","url":"https://www.gumbootsconsulting.co.nz/waihi-beach.html","address":{"@type":"PostalAddress","addressLocality":"Waihi Beach","addressRegion":"Waikato","addressCountry":"NZ"},"geo":{"@type":"GeoCoordinates","latitude":-37.3800,"longitude":175.9300},"description":"Gumboots Consulting Engineers — geotechnical, civil, TP58 wastewater and stormwater engineering for Waihi Beach. Coromandel Peninsula specialists based in Whangamata."}
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Engineering services in Waihi Beach",
+        "provider": {
+            "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Waihi Beach"
+        },
+        "url": "https://www.gumbootsconsulting.co.nz/waihi-beach.html",
+        "description": "Gumboots Consulting Engineers — geotechnical, civil, TP58 wastewater and stormwater engineering for Waihi Beach. Coromandel Peninsula specialists based in Whangamata."
+    }
     </script>
 </body>
 </html>

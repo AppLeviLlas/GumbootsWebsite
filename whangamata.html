@@ -392,7 +392,20 @@
         document.querySelectorAll('#navLinks a').forEach(link => { link.addEventListener('click', () => { document.getElementById('navLinks').classList.remove('open'); }); });
     </script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"LocalBusiness","name":"Gumboots Consulting Engineers – Whangamata","image":"https://www.gumbootsconsulting.co.nz/img/gumboot-logo.webp","telephone":"+64204486697","email":"office@gumbootsconsulting.co.nz","url":"https://www.gumbootsconsulting.co.nz/whangamata.html","address":{"@type":"PostalAddress","addressLocality":"Whangamata","addressRegion":"Waikato","addressCountry":"NZ"},"geo":{"@type":"GeoCoordinates","latitude":-37.2000,"longitude":175.8700},"description":"Gumboots Consulting Engineers — Whangamata specialists in geotechnical engineering, TP58 wastewater design, stormwater design, civil engineering, and structural engineering. Based in Whangamata, Coromandel."}
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Engineering services in Whangamata",
+        "provider": {
+            "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Whangamata"
+        },
+        "url": "https://www.gumbootsconsulting.co.nz/whangamata.html",
+        "description": "Gumboots Consulting Engineers — Whangamata specialists in geotechnical engineering, TP58 wastewater design, stormwater design, civil engineering, and structural engineering. Based in Whangamata, Coromandel."
+    }
     </script>
 </body>
 </html>

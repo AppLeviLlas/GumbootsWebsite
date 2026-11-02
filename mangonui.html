@@ -290,7 +290,7 @@
                                 <p class="small text-muted mb-0">Resource consent applications in Mangonui are handled by our partner, Far North Resource Consents.</p>
                             </div>
                             <div class="card-footer bg-transparent border-0 text-center pb-3">
-                                <span class="small fw-bold text-gumboots-light">Visit Far North Resource Consents <i class="fas fa-arrow-right ms-1"></i></span>
+                                <span class="small fw-bold text-gumboots-light">Resource consent applications <i class="fas fa-arrow-right ms-1"></i></span>
                             </div>
                         </div>
                     </a>
@@ -564,68 +564,61 @@
         document.querySelectorAll('#navLinks a').forEach(link=>{ link.addEventListener('click',()=>{ document.getElementById('navLinks').classList.remove('open'); }); });
     </script>
     <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Gumboots Consulting Engineers – Mangonui",
-    "image": "https://www.gumbootsconsulting.co.nz/img/gumboot-logo.webp",
-    "telephone": "+64204486697",
-    "email": "office@gumbootsconsulting.co.nz",
-    "url": "https://www.gumbootsconsulting.co.nz/mangonui.html",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Mangonui",
-        "addressRegion": "Northland",
-        "addressCountry": "NZ"
-    },
-    "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -34.9983,
-        "longitude": 173.5317
-    },
-    "description": "Gumboots Consulting Engineers — geotechnical, TP58 wastewater, stormwater, structural, and civil engineering services in Mangonui and Doubtless Bay, Northland.",
-    "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Engineering Services in Mangonui",
-        "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Geotechnical Engineering Mangonui"
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Engineering services in Mangonui",
+        "provider": {
+            "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Mangonui"
+        },
+        "url": "https://www.gumbootsconsulting.co.nz/mangonui.html",
+        "description": "Gumboots Consulting Engineers — geotechnical, TP58 wastewater, stormwater, structural, and civil engineering services in Mangonui and Doubtless Bay, Northland.",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Engineering Services in Mangonui",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Geotechnical Engineering Mangonui"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "TP58 Wastewater Design Mangonui"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Stormwater Design Mangonui"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Structural Engineering Mangonui"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Civil Engineering Mangonui"
+                    }
                 }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "TP58 Wastewater Design Mangonui"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Stormwater Design Mangonui"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Structural Engineering Mangonui"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Civil Engineering Mangonui"
-                }
-            }
-        ]
+            ]
+        }
     }
-}
     </script>
     <script type="application/ld+json">
 {

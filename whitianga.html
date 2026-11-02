@@ -382,7 +382,20 @@
     </script>
     <!-- TODO(Paul): The LocalBusiness name was changed per the brief. addressLocality and geo still describe the real office address. Confirm the name and address before publishing. -->
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"LocalBusiness","name":"Gumboots Consulting Engineers – Whitianga & Mercury Bay","image":"https://www.gumbootsconsulting.co.nz/img/gumboot-logo.webp","telephone":"+64204486697","email":"office@gumbootsconsulting.co.nz","url":"https://www.gumbootsconsulting.co.nz/whitianga.html","address":{"@type":"PostalAddress","addressLocality":"Whangamata","addressRegion":"Waikato","addressCountry":"NZ"},"geo":{"@type":"GeoCoordinates","latitude":-37.2000,"longitude":175.8700},"description":"Gumboots Consulting Engineers — Whitianga and Mercury Bay specialists in geotechnical engineering, TP58 wastewater design, stormwater design, civil engineering, and structural engineering. TCDC-ready reports."}
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Engineering services in Whangamata",
+        "provider": {
+            "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Whangamata"
+        },
+        "url": "https://www.gumbootsconsulting.co.nz/whitianga.html",
+        "description": "Gumboots Consulting Engineers — Whitianga and Mercury Bay specialists in geotechnical engineering, TP58 wastewater design, stormwater design, civil engineering, and structural engineering. TCDC-ready reports."
+    }
     </script>
 </body>
 </html>

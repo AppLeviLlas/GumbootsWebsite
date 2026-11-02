@@ -615,29 +615,56 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Gumboots Consulting Engineers – Coromandel",
-        "image": "https://www.gumbootsconsulting.co.nz/img/gumboot-logo.webp",
-        "telephone": "+64204486697",
-        "email": "office@gumbootsconsulting.co.nz",
-        "url": "https://www.gumbootsconsulting.co.nz/coromandel-peninsula.html",
-        "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Whangamata",
-            "addressRegion": "Waikato",
-            "addressCountry": "NZ"
+        "@type": "Service",
+        "name": "Engineering services in Whangamata",
+        "provider": {
+            "@id": "https://www.gumbootsconsulting.co.nz/#organization"
         },
-        "geo": { "@type": "GeoCoordinates", "latitude": -37.2000, "longitude": 175.8700 },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Whangamata"
+        },
+        "url": "https://www.gumbootsconsulting.co.nz/coromandel-peninsula.html",
         "description": "Gumboots Consulting Engineers — Coromandel Peninsula specialists in geotechnical engineering, TP58 wastewater design, stormwater design, civil engineering, and structural engineering. Based in Whangamata.",
         "hasOfferCatalog": {
             "@type": "OfferCatalog",
             "name": "Engineering Services Coromandel Peninsula",
             "itemListElement": [
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Geotechnical Engineering Coromandel"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Civil Engineering Coromandel"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "TP58 Wastewater Design Coromandel"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stormwater Design Coromandel"}},
-                {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Structural Engineering Coromandel"}}
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Geotechnical Engineering Coromandel"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Civil Engineering Coromandel"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "TP58 Wastewater Design Coromandel"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Stormwater Design Coromandel"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Structural Engineering Coromandel"
+                    }
+                }
             ]
         }
     }

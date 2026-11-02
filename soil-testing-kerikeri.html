@@ -370,43 +370,58 @@
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": "LocalBusiness",
-                "name": "Gumboots Consulting Engineers",
-                "image": "https://www.gumbootsconsulting.co.nz/img/gumboot-logo.webp",
-                "telephone": "+64204486697",
-                "email": "office@gumbootsconsulting.co.nz",
-                "url": "https://www.gumbootsconsulting.co.nz/",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Kerikeri",
-                    "addressRegion": "Northland",
-                    "addressCountry": "NZ"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": -35.2280,
-                    "longitude": 173.9480
-                },
-                "areaServed": "Kerikeri"
-            },
-            {
                 "@type": "Service",
                 "serviceType": "Soil Testing Service",
                 "provider": {
-                    "@type": "LocalBusiness",
-                    "name": "Gumboots Consulting Engineers"
+                    "@id": "https://www.gumbootsconsulting.co.nz/#organization"
                 },
                 "areaServed": "Kerikeri",
                 "hasOfferCatalog": {
                     "@type": "OfferCatalog",
                     "name": "Soil Testing Services Kerikeri",
                     "itemListElement": [
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Residential soil testing" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Commercial soil analysis" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Construction site soil testing" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Environmental soil sampling" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Soil percolation testing" } },
-                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Geotechnical soil investigation" } }
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Residential soil testing"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Commercial soil analysis"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Construction site soil testing"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Environmental soil sampling"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Soil percolation testing"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Geotechnical soil investigation"
+                            }
+                        }
                     ]
                 }
             }

@@ -98,29 +98,45 @@
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": ["LocalBusiness", "ProfessionalService"],
-                "@id": "https://www.gumbootsconsulting.co.nz/#business-waihi-beach",
-                "name": "Gumboots Consulting Engineers",
-                "telephone": "+6420448697",
-                "email": "office@gumbootsconsulting.co.nz",
-                "address": { "@type": "PostalAddress", "addressLocality": "Whangamata", "addressRegion": "Waikato", "addressCountry": "NZ" },
-                "url": "https://www.gumbootsconsulting.co.nz/",
-                "areaServed": [{"@type": "AdministrativeArea", "name": "Thames-Coromandel District"}]
-            },
-            {
                 "@type": "Service",
                 "name": "Civil Engineering Waihi Beach",
                 "serviceType": "Civil Engineer",
-                "provider": {"@id": "https://www.gumbootsconsulting.co.nz/#business-waihi-beach"},
+                "provider": {
+                    "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+                },
                 "areaServed": "Waihi Beach",
                 "hasOfferCatalog": {
                     "@type": "OfferCatalog",
                     "name": "Civil Engineering Services Waihi Beach",
                     "itemListElement": [
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Site grading and drainage design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stormwater management design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Civil site plan for TCDC consent"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Coastal and estuarine site civil engineering"}}
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Site grading and drainage design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Stormwater management design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Civil site plan for TCDC consent"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Coastal and estuarine site civil engineering"
+                            }
+                        }
                     ]
                 }
             }

@@ -370,46 +370,59 @@
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": ["LocalBusiness", "ProfessionalService"],
-                "@id": "https://www.gumbootsconsulting.co.nz/#business",
-                "name": "Gumboots Consulting Engineers",
-                "telephone": "+6420448697",
-                "email": "office@gumbootsconsulting.co.nz",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Kerikeri",
-                    "addressRegion": "Northland",
-                    "postalCode": "0230",
-                    "addressCountry": "NZ"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": -35.7275,
-                    "longitude": 174.3166
-                },
-                "url": "https://www.gumbootsconsulting.co.nz/",
-                "areaServed": [{"@type": "City", "name": "Whangarei"}],
-                "sameAs": [
-                    "https://www.facebook.com/gumbootsconsultingengineers",
-                    "https://www.linkedin.com/company/gumboots-consulting-engineers/"
-                ]
-            },
-            {
                 "@type": "Service",
                 "name": "Civil Engineering Whangarei",
                 "serviceType": "Civil Engineer",
-                "provider": {"@id": "https://www.gumbootsconsulting.co.nz/#business"},
+                "provider": {
+                    "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+                },
                 "areaServed": "Whangarei",
                 "hasOfferCatalog": {
                     "@type": "OfferCatalog",
                     "name": "Civil Engineering Services Whangarei",
                     "itemListElement": [
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Site grading and drainage design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Civil site plan design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stormwater management design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Land development consulting"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drainage system design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Floodplain analysis"}}
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Site grading and drainage design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Civil site plan design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Stormwater management design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Land development consulting"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Drainage system design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Floodplain analysis"
+                            }
+                        }
                     ]
                 }
             }

@@ -271,7 +271,20 @@
         document.querySelectorAll('#navLinks a').forEach(link => { link.addEventListener('click', () => { document.getElementById('navLinks').classList.remove('open'); }); });
     </script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"LocalBusiness","name":"Gumboots Consulting Engineers – Thames","image":"https://www.gumbootsconsulting.co.nz/img/gumboot-logo.webp","telephone":"+64204486697","email":"office@gumbootsconsulting.co.nz","url":"https://www.gumbootsconsulting.co.nz/thames.html","address":{"@type":"PostalAddress","addressLocality":"Thames","addressRegion":"Waikato","addressCountry":"NZ"},"geo":{"@type":"GeoCoordinates","latitude":-37.1400,"longitude":175.5400},"description":"Gumboots Consulting Engineers — geotechnical, civil, TP58 wastewater, stormwater, and structural engineering for Thames and the Hauraki Plains. Coromandel Peninsula specialists."}
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Engineering services in Thames",
+        "provider": {
+            "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Thames"
+        },
+        "url": "https://www.gumbootsconsulting.co.nz/thames.html",
+        "description": "Gumboots Consulting Engineers — geotechnical, civil, TP58 wastewater, stormwater, and structural engineering for Thames and the Hauraki Plains. Coromandel Peninsula specialists."
+    }
     </script>
 </body>
 </html>

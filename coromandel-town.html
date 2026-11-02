@@ -266,7 +266,20 @@
         document.querySelectorAll('#navLinks a').forEach(link => { link.addEventListener('click', () => { document.getElementById('navLinks').classList.remove('open'); }); });
     </script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"LocalBusiness","name":"Gumboots Consulting Engineers – Coromandel Town","image":"https://www.gumbootsconsulting.co.nz/img/gumboot-logo.webp","telephone":"+64204486697","email":"office@gumbootsconsulting.co.nz","url":"https://www.gumbootsconsulting.co.nz/coromandel-town.html","address":{"@type":"PostalAddress","addressLocality":"Coromandel Town","addressRegion":"Waikato","addressCountry":"NZ"},"geo":{"@type":"GeoCoordinates","latitude":-36.7600,"longitude":175.5000},"description":"Gumboots Consulting Engineers — geotechnical, TP58 wastewater, stormwater and civil engineering for Coromandel Town and the northern peninsula. TCDC consent specialists."}
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Engineering services in Coromandel Town",
+        "provider": {
+            "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Coromandel Town"
+        },
+        "url": "https://www.gumbootsconsulting.co.nz/coromandel-town.html",
+        "description": "Gumboots Consulting Engineers — geotechnical, TP58 wastewater, stormwater and civil engineering for Coromandel Town and the northern peninsula. TCDC consent specialists."
+    }
     </script>
 </body>
 </html>

@@ -107,29 +107,48 @@
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": ["LocalBusiness", "ProfessionalService"],
-                "@id": "https://www.gumbootsconsulting.co.nz/#business-tairua",
-                "name": "Gumboots Consulting Engineers",
-                "telephone": "+6420448697",
-                "email": "office@gumbootsconsulting.co.nz",
-                "address": { "@type": "PostalAddress", "addressLocality": "Whangamata", "addressRegion": "Waikato", "addressCountry": "NZ" },
-                "url": "https://www.gumbootsconsulting.co.nz/",
-                "areaServed": [{"@type": "AdministrativeArea", "name": "Thames-Coromandel District"}]
-            },
-            {
                 "@type": "Service",
                 "name": "Civil Engineering Tairua",
                 "serviceType": "Civil Engineer",
-                "provider": {"@id": "https://www.gumbootsconsulting.co.nz/#business-tairua"},
-                "areaServed": ["Tairua", "Pauanui"],
+                "provider": {
+                    "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+                },
+                "areaServed": [
+                    "Tairua",
+                    "Pauanui"
+                ],
                 "hasOfferCatalog": {
                     "@type": "OfferCatalog",
                     "name": "Civil Engineering Services Tairua",
                     "itemListElement": [
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Site grading and drainage design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stormwater management design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Civil site plan for TCDC consent"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Land development consulting"}}
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Site grading and drainage design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Stormwater management design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Civil site plan for TCDC consent"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Land development consulting"
+                            }
+                        }
                     ]
                 }
             }

@@ -55,71 +55,137 @@
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": ["LocalBusiness", "ProfessionalService"],
-          "@id": "https://www.gumbootsconsulting.co.nz/#business",
-          "name": "Gumboots Consulting Engineers",
-          "description": "Geotechnical and civil engineering specialists providing civil engineering, soil testing, stormwater design, and wastewater design throughout Northland, New Zealand since 2018.",
-          "url": "https://www.gumbootsconsulting.co.nz/",
-          "telephone": "+6420448697",
-          "email": "office@gumbootsconsulting.co.nz",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Kerikeri",
-            "addressRegion": "Northland",
-            "postalCode": "0230",
-            "addressCountry": "NZ"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": -35.2280,
-            "longitude": 173.9480
-          },
-          "areaServed": [
-            {"@type": "City", "name": "Kerikeri"},
-            {"@type": "City", "name": "Paihia"},
-            {"@type": "Place", "name": "Bay of Islands"},
-            {"@type": "City", "name": "Mangonui"},
-            {"@type": "City", "name": "Coopers Beach"},
-            {"@type": "City", "name": "Dargaville"},
-            {"@type": "AdministrativeArea", "name": "Northland"}
-          ],
-          "sameAs": [
-            "https://www.facebook.com/gumbootsconsultingengineers",
-            "https://www.linkedin.com/company/gumboots-consulting-engineers/"
-          ]
-        },
-        {
-          "@type": "Service",
-          "name": "Civil Engineering Services",
-          "serviceType": "Civil Engineer",
-          "provider": {"@id": "https://www.gumbootsconsulting.co.nz/#business"},
-          "areaServed": ["Kerikeri", "Paihia", "Bay of Islands", "Mangonui", "Coopers Beach", "Dargaville", "Northland"],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Civil Engineering Services",
-            "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Structural engineering services"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Site grading and drainage design"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Construction project management"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Civil site plan design"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stormwater management design"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Land development consulting"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drainage system design"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Floodplain analysis"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Erosion control design"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Low impact development design"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Infrastructure planning"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stormwater management"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Detention pond design"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Flood control design"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Water resources engineering"}}
-            ]
-          }
-        }
-      ]
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Service",
+                "name": "Civil Engineering Services",
+                "serviceType": "Civil Engineer",
+                "provider": {
+                    "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+                },
+                "areaServed": [
+                    "Kerikeri",
+                    "Paihia",
+                    "Bay of Islands",
+                    "Mangonui",
+                    "Coopers Beach",
+                    "Dargaville",
+                    "Northland"
+                ],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Civil Engineering Services",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Structural engineering services"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Site grading and drainage design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Construction project management"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Civil site plan design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Stormwater management design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Land development consulting"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Drainage system design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Floodplain analysis"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Erosion control design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Low impact development design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Infrastructure planning"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Stormwater management"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Detention pond design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Flood control design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Water resources engineering"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
     }
     </script>
 

@@ -55,68 +55,116 @@
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": ["LocalBusiness", "ProfessionalService"],
-          "@id": "https://www.gumbootsconsulting.co.nz/#business",
-          "name": "Gumboots Consulting Engineers",
-          "description": "Geotechnical and civil engineering specialists providing soil testing, geotechnical investigation, stormwater design, and wastewater design throughout Northland, New Zealand since 2018.",
-          "url": "https://www.gumbootsconsulting.co.nz/",
-          "telephone": "+6420448697",
-          "email": "office@gumbootsconsulting.co.nz",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Kerikeri",
-            "addressRegion": "Northland",
-            "postalCode": "0230",
-            "addressCountry": "NZ"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": -35.2280,
-            "longitude": 173.9480
-          },
-          "areaServed": [
-            {"@type": "City", "name": "Kerikeri"},
-            {"@type": "City", "name": "Paihia"},
-            {"@type": "Place", "name": "Bay of Islands"},
-            {"@type": "City", "name": "Mangonui"},
-            {"@type": "City", "name": "Coopers Beach"},
-            {"@type": "City", "name": "Dargaville"},
-            {"@type": "AdministrativeArea", "name": "Northland"}
-          ],
-          "sameAs": [
-            "https://www.facebook.com/gumbootsconsultingengineers",
-            "https://www.linkedin.com/company/gumboots-consulting-engineers/"
-          ]
-        },
-        {
-          "@type": "Service",
-          "name": "Soil Testing Service",
-          "serviceType": "Soil Testing",
-          "provider": {"@id": "https://www.gumbootsconsulting.co.nz/#business"},
-          "areaServed": ["Kerikeri", "Paihia", "Bay of Islands", "Mangonui", "Coopers Beach", "Dargaville", "Northland"],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Soil Testing Services",
-            "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Residential soil testing"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Commercial soil analysis"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Construction site soil testing"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Environmental soil sampling"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Soil contamination testing"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Soil fertility analysis"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Geotechnical soil investigation"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Soil percolation testing"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Soil borings and sampling"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Soil bearing capacity testing"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Soil compaction testing"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Soil classification services"}}
-            ]
-          }
-        }
-      ]
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Service",
+                "name": "Soil Testing Service",
+                "serviceType": "Soil Testing",
+                "provider": {
+                    "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+                },
+                "areaServed": [
+                    "Kerikeri",
+                    "Paihia",
+                    "Bay of Islands",
+                    "Mangonui",
+                    "Coopers Beach",
+                    "Dargaville",
+                    "Northland"
+                ],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Soil Testing Services",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Residential soil testing"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Commercial soil analysis"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Construction site soil testing"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Environmental soil sampling"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Soil contamination testing"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Soil fertility analysis"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Geotechnical soil investigation"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Soil percolation testing"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Soil borings and sampling"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Soil bearing capacity testing"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Soil compaction testing"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Soil classification services"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
     }
     </script>
 
@@ -633,11 +681,11 @@
                     <ul class="service-area-links">
                         <li><a href="soil-testing-kerikeri.html">Soil Testing in Kerikeri</a></li>
                         <li><a href="soil-testing-whangarei.html">Soil Testing in Whangarei</a></li>
-                        <li><a href="soil-testing-paihia.html">Soil Testing in Paihia</a></li>
+                        <li><a href="paihia.html">Paihia engineering services</a></li>
                         <li><a href="soil-testing-bay-of-islands.html">Soil Testing in Bay of Islands</a></li>
                         <li><a href="soil-testing-dargaville.html">Soil Testing in Dargaville</a></li>
                         <li><a href="soil-testing-mangonui.html">Soil Testing in Mangonui</a></li>
-                        <li><a href="soil-testing-coopers-beach.html">Soil Testing in Coopers Beach</a></li>
+                        <li><a href="coopers-beach.html">Coopers Beach engineering services</a></li>
                         <li><a href="soil-testing-whangamata.html">Soil Testing in Whangamata</a></li>
                         <li><a href="soil-testing-thames.html">Soil Testing in Thames</a></li>
                         <li><a href="soil-testing-coromandel.html">Soil Testing — Coromandel Peninsula Overview</a></li>

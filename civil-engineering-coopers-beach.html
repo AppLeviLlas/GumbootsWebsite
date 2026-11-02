@@ -370,46 +370,59 @@
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": ["LocalBusiness", "ProfessionalService"],
-                "@id": "https://www.gumbootsconsulting.co.nz/#business",
-                "name": "Gumboots Consulting Engineers",
-                "telephone": "+6420448697",
-                "email": "office@gumbootsconsulting.co.nz",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Kerikeri",
-                    "addressRegion": "Northland",
-                    "postalCode": "0230",
-                    "addressCountry": "NZ"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": -34.9720,
-                    "longitude": 173.4840
-                },
-                "url": "https://www.gumbootsconsulting.co.nz/",
-                "areaServed": [{"@type": "City", "name": "Coopers Beach"}],
-                "sameAs": [
-                    "https://www.facebook.com/gumbootsconsultingengineers",
-                    "https://www.linkedin.com/company/gumboots-consulting-engineers/"
-                ]
-            },
-            {
                 "@type": "Service",
                 "name": "Civil Engineering Coopers Beach",
                 "serviceType": "Civil Engineer",
-                "provider": {"@id": "https://www.gumbootsconsulting.co.nz/#business"},
+                "provider": {
+                    "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+                },
                 "areaServed": "Coopers Beach",
                 "hasOfferCatalog": {
                     "@type": "OfferCatalog",
                     "name": "Civil Engineering Services Coopers Beach",
                     "itemListElement": [
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Site grading and drainage design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Civil site plan design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stormwater management design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Land development consulting"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drainage system design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Sandy coastal soil drainage"}}
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Site grading and drainage design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Civil site plan design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Stormwater management design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Land development consulting"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Drainage system design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Sandy coastal soil drainage"
+                            }
+                        }
                     ]
                 }
             }
@@ -706,11 +719,11 @@
             </div>
             <div class="row gx-5 row-cols-1 row-cols-md-2 row-cols-lg-4">
                 <div class="col mb-4">
-                    <a href="geotechnical-engineering-coopers-beach.html" class="text-decoration-none">
+                    <a href="geotechnical-engineering-northland.html" class="text-decoration-none">
                         <div class="card h-100 service-item border-0 shadow-sm">
                             <div class="card-body p-3 text-center">
                                 <div class="service-icon" style="font-size: 2rem;"><i class="fas fa-mountain"></i></div>
-                                <h3 class="h6 fw-bolder text-gumboots-light mb-2">Geotechnical Engineering Coopers Beach</h3>
+                                <h3 class="h6 fw-bolder text-gumboots-light mb-2">Geotechnical Engineering Northland</h3>
                             </div>
                         </div>
                     </a>
@@ -726,11 +739,11 @@
                     </a>
                 </div>
                 <div class="col mb-4">
-                    <a href="soil-testing-coopers-beach.html" class="text-decoration-none">
+                    <a href="soil-testing.html" class="text-decoration-none">
                         <div class="card h-100 service-item border-0 shadow-sm">
                             <div class="card-body p-3 text-center">
                                 <div class="service-icon" style="font-size: 2rem;"><i class="fas fa-vial"></i></div>
-                                <h3 class="h6 fw-bolder text-gumboots-light mb-2">Soil Testing Coopers Beach</h3>
+                                <h3 class="h6 fw-bolder text-gumboots-light mb-2">Soil Testing</h3>
                             </div>
                         </div>
                     </a>

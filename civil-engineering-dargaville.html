@@ -370,46 +370,59 @@
         "@context": "https://schema.org",
         "@graph": [
             {
-                "@type": ["LocalBusiness", "ProfessionalService"],
-                "@id": "https://www.gumbootsconsulting.co.nz/#business",
-                "name": "Gumboots Consulting Engineers",
-                "telephone": "+6420448697",
-                "email": "office@gumbootsconsulting.co.nz",
-                "address": {
-                    "@type": "PostalAddress",
-                    "addressLocality": "Kerikeri",
-                    "addressRegion": "Northland",
-                    "postalCode": "0230",
-                    "addressCountry": "NZ"
-                },
-                "geo": {
-                    "@type": "GeoCoordinates",
-                    "latitude": -35.9303,
-                    "longitude": 173.8731
-                },
-                "url": "https://www.gumbootsconsulting.co.nz/",
-                "areaServed": [{"@type": "City", "name": "Dargaville"}],
-                "sameAs": [
-                    "https://www.facebook.com/gumbootsconsultingengineers",
-                    "https://www.linkedin.com/company/gumboots-consulting-engineers/"
-                ]
-            },
-            {
                 "@type": "Service",
                 "name": "Civil Engineering Dargaville",
                 "serviceType": "Civil Engineer",
-                "provider": {"@id": "https://www.gumbootsconsulting.co.nz/#business"},
+                "provider": {
+                    "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+                },
                 "areaServed": "Dargaville",
                 "hasOfferCatalog": {
                     "@type": "OfferCatalog",
                     "name": "Civil Engineering Services Dargaville",
                     "itemListElement": [
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Site grading and drainage design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Civil site plan design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Stormwater management design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Land development consulting"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Drainage system design"}},
-                        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Peat and clay soil drainage design"}}
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Site grading and drainage design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Civil site plan design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Stormwater management design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Land development consulting"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Drainage system design"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Peat and clay soil drainage design"
+                            }
+                        }
                     ]
                 }
             }

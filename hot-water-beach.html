@@ -267,7 +267,20 @@
         document.querySelectorAll('#navLinks a').forEach(link => { link.addEventListener('click', () => { document.getElementById('navLinks').classList.remove('open'); }); });
     </script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"LocalBusiness","name":"Gumboots Consulting Engineers – Hot Water Beach","image":"https://www.gumbootsconsulting.co.nz/img/gumboot-logo.webp","telephone":"+64204486697","email":"office@gumbootsconsulting.co.nz","url":"https://www.gumbootsconsulting.co.nz/hot-water-beach.html","address":{"@type":"PostalAddress","addressLocality":"Hot Water Beach","addressRegion":"Waikato","addressCountry":"NZ"},"geo":{"@type":"GeoCoordinates","latitude":-36.9300,"longitude":175.8200},"description":"Gumboots Consulting Engineers — geotechnical, TP58 wastewater, stormwater and civil engineering for Hot Water Beach. Specialist knowledge of geothermal ground conditions. Coromandel Peninsula."}
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Engineering services in Hot Water Beach",
+        "provider": {
+            "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Hot Water Beach"
+        },
+        "url": "https://www.gumbootsconsulting.co.nz/hot-water-beach.html",
+        "description": "Gumboots Consulting Engineers — geotechnical, TP58 wastewater, stormwater and civil engineering for Hot Water Beach. Specialist knowledge of geothermal ground conditions. Coromandel Peninsula."
+    }
     </script>
 </body>
 </html>

@@ -55,64 +55,88 @@
     <!-- Schema.org JSON-LD -->
     <script type="application/ld+json">
     {
-      "@context": "https://schema.org",
-      "@graph": [
-        {
-          "@type": ["LocalBusiness", "ProfessionalService"],
-          "@id": "https://www.gumbootsconsulting.co.nz/#business",
-          "name": "Gumboots Consulting Engineers",
-          "description": "Geotechnical and civil engineering specialists providing geotechnical engineering, soil testing, stormwater design, and wastewater design throughout Northland, New Zealand since 2018.",
-          "url": "https://www.gumbootsconsulting.co.nz/",
-          "telephone": "+6420448697",
-          "email": "office@gumbootsconsulting.co.nz",
-          "address": {
-            "@type": "PostalAddress",
-            "addressLocality": "Kerikeri",
-            "addressRegion": "Northland",
-            "postalCode": "0230",
-            "addressCountry": "NZ"
-          },
-          "geo": {
-            "@type": "GeoCoordinates",
-            "latitude": -35.2280,
-            "longitude": 173.9480
-          },
-          "areaServed": [
-            {"@type": "City", "name": "Kerikeri"},
-            {"@type": "City", "name": "Paihia"},
-            {"@type": "Place", "name": "Bay of Islands"},
-            {"@type": "City", "name": "Mangonui"},
-            {"@type": "City", "name": "Coopers Beach"},
-            {"@type": "City", "name": "Dargaville"},
-            {"@type": "AdministrativeArea", "name": "Northland"}
-          ],
-          "sameAs": [
-            "https://www.facebook.com/gumbootsconsultingengineers",
-            "https://www.linkedin.com/company/gumboots-consulting-engineers/"
-          ]
-        },
-        {
-          "@type": "Service",
-          "name": "Geotechnical Engineering Services",
-          "serviceType": "Geotechnical Engineer",
-          "provider": {"@id": "https://www.gumbootsconsulting.co.nz/#business"},
-          "areaServed": ["Kerikeri", "Paihia", "Bay of Islands", "Mangonui", "Coopers Beach", "Dargaville", "Northland"],
-          "hasOfferCatalog": {
-            "@type": "OfferCatalog",
-            "name": "Geotechnical Engineering Services",
-            "itemListElement": [
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Soil testing"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Geotechnical site investigation"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Foundation analysis"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Slope stability assessment"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Soil bearing capacity evaluation"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Earthwork design consultation"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Site suitability assessment"}},
-              {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Laboratory testing"}}
-            ]
-          }
-        }
-      ]
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "Service",
+                "name": "Geotechnical Engineering Services",
+                "serviceType": "Geotechnical Engineer",
+                "provider": {
+                    "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+                },
+                "areaServed": [
+                    "Kerikeri",
+                    "Paihia",
+                    "Bay of Islands",
+                    "Mangonui",
+                    "Coopers Beach",
+                    "Dargaville",
+                    "Northland"
+                ],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Geotechnical Engineering Services",
+                    "itemListElement": [
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Soil testing"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Geotechnical site investigation"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Foundation analysis"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Slope stability assessment"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Soil bearing capacity evaluation"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Earthwork design consultation"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Site suitability assessment"
+                            }
+                        },
+                        {
+                            "@type": "Offer",
+                            "itemOffered": {
+                                "@type": "Service",
+                                "name": "Laboratory testing"
+                            }
+                        }
+                    ]
+                }
+            }
+        ]
     }
     </script>
 
@@ -831,7 +855,7 @@
                         <li><a href="geotechnical-engineering-bay-of-islands.html">Geotechnical Engineering in Bay of Islands</a></li>
                         <li><a href="geotechnical-engineering-dargaville.html">Geotechnical Engineering in Dargaville</a></li>
                         <li><a href="geotechnical-engineering-mangonui.html">Geotechnical Engineering in Mangonui</a></li>
-                        <li><a href="geotechnical-engineering-coopers-beach.html">Geotechnical Engineering in Coopers Beach</a></li>
+                        <li><a href="coopers-beach.html">Geotechnical Engineering in Coopers Beach</a></li>
                         <li><a href="geotechnical-engineering-northland.html">Geotechnical Engineering — Northland Overview</a></li>
                         <li><a href="geotechnical-engineering-whangamata.html">Geotechnical Engineering in Whangamata</a></li>
                         <li><a href="geotechnical-engineering-tairua.html">Geotechnical Engineering in Tairua</a></li>

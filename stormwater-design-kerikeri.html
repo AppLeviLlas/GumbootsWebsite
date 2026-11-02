@@ -833,25 +833,22 @@
         "@type": "Service",
         "serviceType": "Stormwater Design",
         "provider": {
-            "@type": "ProfessionalService",
-            "name": "Gumboots Consulting Engineers",
-            "image": "https://www.gumbootsconsulting.co.nz/img/gumboot-logo.webp",
-            "telephone": "+64204486697",
-            "email": "office@gumbootsconsulting.co.nz",
-            "address": {
-                "@type": "PostalAddress",
-                "addressLocality": "Kerikeri",
-                "addressRegion": "Northland",
-                "addressCountry": "NZ"
-            }
+            "@id": "https://www.gumbootsconsulting.co.nz/#organization"
         },
         "areaServed": {
             "@type": "City",
             "name": "Kerikeri",
-            "containedIn": { "@type": "AdministrativeArea", "name": "Far North District" }
+            "containedIn": {
+                "@type": "AdministrativeArea",
+                "name": "Far North District"
+            }
         },
         "description": "Expert stormwater design services in Kerikeri including stormwater management plans, detention design, swales, rain gardens, and flood risk assessment. Local engineers since 2018.",
-        "offers": { "@type": "Offer", "availability": "https://schema.org/InStock", "areaServed": "Kerikeri" }
+        "offers": {
+            "@type": "Offer",
+            "availability": "https://schema.org/InStock",
+            "areaServed": "Kerikeri"
+        }
     }
     </script>
 </body>

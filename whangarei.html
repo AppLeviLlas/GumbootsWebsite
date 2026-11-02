@@ -282,20 +282,6 @@
                     </a>
                 </div>
                 <div class="col mb-4">
-                    <a href="https://resourceconsent.co.nz/resource-consent.html" class="service-hub-card">
-                        <div class="card h-100">
-                            <div class="card-body p-4 text-center">
-                                <div class="service-icon"><i class="fas fa-file-alt"></i></div>
-                                <h3 class="h5 fw-bolder text-gumboots-light mb-2">Resource Consents</h3>
-                                <p class="small text-muted mb-0">Building in the Far North too? Our partner, Far North Resource Consents, handles Far North District resource consents.</p>
-                            </div>
-                            <div class="card-footer bg-transparent border-0 text-center pb-3">
-                                <span class="small fw-bold text-gumboots-light">Visit Far North Resource Consents <i class="fas fa-arrow-right ms-1"></i></span>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col mb-4">
                     <a href="geotechnical-engineering.html" class="service-hub-card">
                         <div class="card h-100">
                             <div class="card-body p-4 text-center">
@@ -565,68 +551,61 @@
         document.querySelectorAll('#navLinks a').forEach(link=>{ link.addEventListener('click',()=>{ document.getElementById('navLinks').classList.remove('open'); }); });
     </script>
     <script type="application/ld+json">
-{
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Gumboots Consulting Engineers – Whangarei",
-    "image": "https://www.gumbootsconsulting.co.nz/img/gumboot-logo.webp",
-    "telephone": "+64204486697",
-    "email": "office@gumbootsconsulting.co.nz",
-    "url": "https://www.gumbootsconsulting.co.nz/whangarei.html",
-    "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Whangarei",
-        "addressRegion": "Northland",
-        "addressCountry": "NZ"
-    },
-    "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": -35.7275,
-        "longitude": 174.3241
-    },
-    "description": "Gumboots Consulting Engineers — geotechnical, TP58 wastewater, stormwater, structural, and civil engineering for Whangarei and the Whangarei District, Northland.",
-    "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Engineering Services in Whangarei",
-        "itemListElement": [
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Geotechnical Engineering Whangarei"
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Engineering services in Whangarei",
+        "provider": {
+            "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Whangarei"
+        },
+        "url": "https://www.gumbootsconsulting.co.nz/whangarei.html",
+        "description": "Gumboots Consulting Engineers — geotechnical, TP58 wastewater, stormwater, structural, and civil engineering for Whangarei and the Whangarei District, Northland.",
+        "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Engineering Services in Whangarei",
+            "itemListElement": [
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Geotechnical Engineering Whangarei"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "TP58 Wastewater Design Whangarei"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Stormwater Design Whangarei"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Structural Engineering Whangarei"
+                    }
+                },
+                {
+                    "@type": "Offer",
+                    "itemOffered": {
+                        "@type": "Service",
+                        "name": "Civil Engineering Whangarei"
+                    }
                 }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "TP58 Wastewater Design Whangarei"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Stormwater Design Whangarei"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Structural Engineering Whangarei"
-                }
-            },
-            {
-                "@type": "Offer",
-                "itemOffered": {
-                    "@type": "Service",
-                    "name": "Civil Engineering Whangarei"
-                }
-            }
-        ]
+            ]
+        }
     }
-}
     </script>
     <script type="application/ld+json">
 {

@@ -267,7 +267,20 @@
         document.querySelectorAll('#navLinks a').forEach(link => { link.addEventListener('click', () => { document.getElementById('navLinks').classList.remove('open'); }); });
     </script>
     <script type="application/ld+json">
-    {"@context":"https://schema.org","@type":"LocalBusiness","name":"Gumboots Consulting Engineers – Tairua","image":"https://www.gumbootsconsulting.co.nz/img/gumboot-logo.webp","telephone":"+64204486697","email":"office@gumbootsconsulting.co.nz","url":"https://www.gumbootsconsulting.co.nz/tairua.html","address":{"@type":"PostalAddress","addressLocality":"Tairua","addressRegion":"Waikato","addressCountry":"NZ"},"geo":{"@type":"GeoCoordinates","latitude":-37.0000,"longitude":175.8600},"description":"Gumboots Consulting Engineers — geotechnical, civil, TP58 wastewater and stormwater engineering for Tairua and Pauanui. Based in Whangamata, Coromandel."}
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Engineering services in Tairua",
+        "provider": {
+            "@id": "https://www.gumbootsconsulting.co.nz/#organization"
+        },
+        "areaServed": {
+            "@type": "Place",
+            "name": "Tairua"
+        },
+        "url": "https://www.gumbootsconsulting.co.nz/tairua.html",
+        "description": "Gumboots Consulting Engineers — geotechnical, civil, TP58 wastewater and stormwater engineering for Tairua and Pauanui. Based in Whangamata, Coromandel."
+    }
     </script>
 </body>
 </html>
