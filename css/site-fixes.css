@@ -82,6 +82,9 @@ summary:focus-visible,
 
 .section-label[style*="background"] { background: var(--fix-green) !important; }
 
+/* Mobile call bar keeps white text on hover (Bootstrap's link hover colour is dark green) */
+.mobile-cta a:hover { color: #fff; }
+
 /* Hover states that used the bright green */
 .topic-nav a:hover {
     background: var(--fix-green);
