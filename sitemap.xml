@@ -198,14 +198,7 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://www.gumbootsconsulting.co.nz/geotechnical-engineering-coopers-beach.html</loc>
-        <lastmod>2026-03-05</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- TP58 Wastewater Design Location Pages -->
+    
     <url>
         <loc>https://www.gumbootsconsulting.co.nz/tp58-wastewater-kerikeri.html</loc>
         <lastmod>2026-03-05</lastmod>
@@ -364,20 +357,8 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
-    <url>
-        <loc>https://www.gumbootsconsulting.co.nz/soil-testing-paihia.html</loc>
-        <lastmod>2026-03-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://www.gumbootsconsulting.co.nz/soil-testing-coopers-beach.html</loc>
-        <lastmod>2026-03-21</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-
-    <!-- Civil Engineering Location Pages -->
+    
+    
     <url>
         <loc>https://www.gumbootsconsulting.co.nz/civil-engineering-kerikeri.html</loc>
         <lastmod>2026-05-22</lastmod>
