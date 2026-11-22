@@ -37,8 +37,8 @@ Redirect 301 /soil-testing-coopers-beach.html https://www.gumbootsconsulting.co.
 
 # Consent and planning pages go to the partner, Far North Resource Consents (2026-11-02)
 Redirect 301 /resource-consent-northland.html https://resourceconsent.co.nz/resource-consent.html
-Redirect 301 /planning-consultant-paihia.html https://resourceconsent.co.nz/resource-consent.html
-Redirect 301 /planning-consultant-kerikeri.html https://resourceconsent.co.nz/resource-consent.html
+Redirect 301 /planning-consultant-paihia.html https://resourceconsent.co.nz/resource-consent-bay-of-islands.html
+Redirect 301 /planning-consultant-kerikeri.html https://resourceconsent.co.nz/resource-consent-kerikeri.html
 Redirect 301 /subdivision-consultant-northland.html https://resourceconsent.co.nz/subdivision-consent.html
 
 # Regional pages merged into their main service pages (2026-11-02)
